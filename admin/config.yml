@@ -2,7 +2,7 @@ backend:
   name: github
   repo: jane7353n0/Utopia # Path to your GitHub repository
   # optional, defaults to master
-  # branch: main
+  branch: main
 
   # This line should *not* be indented
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
