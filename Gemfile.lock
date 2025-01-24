@@ -175,4 +175,4 @@ DEPENDENCIES
   jquery-rails (~> 4.6)
 
 BUNDLED WITH
-   2.6.3
+   2.4.0
