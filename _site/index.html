@@ -1,4 +1,14 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Home</title>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Play-Utopia</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +43,19 @@
       </form>
     </div>
   </div>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
-      {{ item.name }}
+  
+    <a href="/" style="color: red;">
+      Home
     </a>
-  {% endfor %}
+  
+    <a href="/about.html" >
+      About
+    </a>
+  
 </nav>
+
+    <h1>hello world!</h1>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
