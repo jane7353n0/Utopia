@@ -5,7 +5,10 @@
   </head>
   <body>
     {% include navigation.html %}
-    <div class="container">
+    <h2>{{page.title}}</h2>
+    <small>{{page.date}}</small>
+    <div><img src="{{page.thumbnail}}"></div>
+    <div>
       {{ content }}
     </div>
   </body>

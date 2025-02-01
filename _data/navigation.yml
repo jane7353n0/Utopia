@@ -1,4 +1,18 @@
 - name: Home
+  type: Link
   link: /
+- name: Collections
+  type: Dropdown
+  items: 
+  - name: Characters
+    type: Link
+    link: /characters
+- name: Rules
+  type: Dropdown
+  items:
+  - name: Spells
+    type: Link
+    link: /spells
 - name: About
+  type: Link
   link: /about.html
