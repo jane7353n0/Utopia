@@ -1,0 +1,4 @@
+---
+layout: none
+---
+[{% for spell in site.spells %}{% include api.spell.json %}{% endfor %}]

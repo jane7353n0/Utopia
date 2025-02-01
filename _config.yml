@@ -1,0 +1,31 @@
+collections:
+  spells:
+    output: true
+  
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  - scope:
+      path: "/api"
+    values:
+      layout: "none"
+  - scope:
+      path: ""
+      type: "spells"
+    values:
+      layout: "spell"
+  - scope:
+      path: "/compendien"
+    values:
+      layout: compendium
+  - scope:
+      path: "/compendien/basic-rules"
+    values:
+      layout: chapter
+
+plugins:
+ - jekyll-sitemap
+

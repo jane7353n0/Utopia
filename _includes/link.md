@@ -1,0 +1,1 @@
+**<a href='/{{include.type}}/{{ include.name | downcase }}'>{{include.name}}</a>**

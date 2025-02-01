@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    {% include meta.html %}
+  </head>
+  <body>
+    {% include navigation.html %}
+    <div class="container container-sm d-flex gap-4">
+        <div>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">{{page.title}}</h5>
+                    <h6 class="card-subtitle text-body-secondary">{{page.type}} | {{page.school}}</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Duration:</strong> {{page.duration}}<br>
+                        <strong>Range:</strong> {{page.range}}<br>
+                        <strong>AOE:</strong> {{page.aoe}}
+                    </li>
+                    <li class="list-group-item">{{ content }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-25">
+            <img src="/assets/img/1454385-607d8b.svg" alt="kleiner Zauberer" width="100%">
+        </div>
+    </div>
+  </body>
+</html>

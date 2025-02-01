@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    {% include meta.html %}
+    
+    </head>
+  <body onload="performSearch()">
+    {% include navigation.html %}
+    <div class="container d-flex flex-column gap-4">
+      <form class="container d-flex flex-column gap-3">
+        <div class=" d-flex justify-content-between gap-2">
+          <input type="text" class="form-control" id="searchBox" name="query" value="" placeholder="Search...">
+          <button type="submit" class="btn btn-primary">Search</button>
+          <button type="reset" class="btn btn-outline-danger">Reset</button>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2">
+          <fieldset class="col">
+            <legend class="form-label fs-5">Artistry</legend>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-3 px-4">
+              {% assign schools = site.data.spells.school | sort:"name" %}{% for school in schools %}
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" name="{{ school.name | downcase }}" value=1 id="school_{{ school.name | downcase }}">
+                <label class="form-check-label" for="school_{{ school.name | downcase }}">
+                  {{ school.name }}
+                </label>
+              </div>
+              {% endfor %}
+            </div>
+          </fieldset>
+          <fieldset class="col">
+            <legend class="form-label fs-5">Type</legend>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-2 px-4">
+              {% assign types = site.data.spells.type | sort:"name" %}{% for type in types %}
+              <div class="form-check col">
+                <input class="form-check-input" type="checkbox" name="{{ type.name | downcase }}" value=1 id="type_{{ type.name | downcase }}">
+                <label class="form-check-label" for="type_{{ type.name | downcase }}">
+                  {{ type.name }}
+                </label>
+              </div>
+              {% endfor %}
+            </div>
+          </fieldset>
+        </div>
+      </form>
+      <!--Spells-->
+      <main>
+        <div id="navigations"></div>
+        <div id="results" class="d-flex flex-column">
+          {{ content }}
+        </div>
+      </main>
+    </div>
+    <script src="/assets/js/search.spell.js"></script>
+  </body>
+</html>
