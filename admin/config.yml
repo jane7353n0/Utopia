@@ -24,7 +24,7 @@ collections:
     label: "Compendium"
     folder: "_compendien/"
     create: true
-    path: "{{slug}}/index.md"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -40,7 +40,7 @@ collections:
         widget: relation
         collection: compendium
         search_fields: [title]
-        value_field: "{{dirname}}"
+        value_field: "{{slug}}"
         display_fields: [title]
       - { label: "Chapter", name: "chapter", widget: "number"}
       - { label: "Body", name: "body", widget: "markdown" }
