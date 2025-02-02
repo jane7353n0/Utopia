@@ -1,6 +1,6 @@
 ---
 title: test
-compendium: basic-rules/index-md
+compendium: basic-rules
 chapter: 1
 ---
 qwe
