@@ -38,9 +38,9 @@ collections:
       - label: Compendium
         name: compendium
         widget: relation
-        collection: "compendien"
-        search_fields: ["title"]
-        value_field: "{{slug}}"
-        display_fields: ["title"]
+        collection: compendien
+        search_fields: [title]
+        value_field: title
+        display_fields: [title]
       - { label: "Chapter", name: "chapter", widget: "number"}
       - { label: "Body", name: "body", widget: "markdown" }
