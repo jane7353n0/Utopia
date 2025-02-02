@@ -33,7 +33,7 @@ collections:
     folder: "_chapter/"
     create: true
     path: "{{compendium}}/{{slug}}"
-			slug: "{{chapter}}-{{slug}}"
+    slug: "{{chapter}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: Compendium
