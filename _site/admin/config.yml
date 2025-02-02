@@ -22,9 +22,9 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: compendium
     label: "Compendium"
-    folder: "_compendien/"
+    folder: "_compendien/{{slug}}"
     create: true
-    slug: "{{slug}}"
+    path: "{{slug}}/index.md"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
