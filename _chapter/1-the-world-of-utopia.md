@@ -1,6 +1,6 @@
 ---
 title: The World of Utopia
-compendium: Basic Rules
+compendium: basic-rules
 chapter: 1
 layout: chapter
 ---
