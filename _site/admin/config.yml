@@ -38,7 +38,7 @@ collections:
       - label: Compendium
         name: compendium
         widget: relation
-        collection: compendien
+        collection: compendium
         search_fields: [title]
         value_field: title
         display_fields: [title]
