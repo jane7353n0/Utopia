@@ -1,6 +1,6 @@
 ---
 title: Creating a Character
-compendium: Basic Rules
+compendium: utopia-ttrpg
 chapter: 3
 layout: chapter
 ---

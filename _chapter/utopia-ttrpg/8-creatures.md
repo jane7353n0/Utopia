@@ -1,6 +1,6 @@
 ---
 title: Creatures
-compendium: Basic Rules
+compendium: utopia-ttrpg
 chapter: 8
 layout: chapter
 ---

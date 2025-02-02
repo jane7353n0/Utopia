@@ -1,6 +1,6 @@
 ---
 title: A Talented Champion
-compendium: Basic Rules
+compendium: utopia-ttrpg
 chapter: 4
 layout: chapter
 ---

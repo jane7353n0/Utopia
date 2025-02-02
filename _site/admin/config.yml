@@ -32,8 +32,10 @@ collections:
     label: "Chapter"
     folder: "_chapter/"
     create: true
-    path: "{{compendium}}/{{slug}}"
-    slug: "{{chapter}}-{{slug}}"
+    path: "{{compendium}}/{{chapter}}-{{slug}}"
+    view_groups: 
+      - label: Compendium
+        field: compendium
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: Compendium

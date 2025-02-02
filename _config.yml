@@ -3,7 +3,7 @@ collections:
     output: true
   chapter:
     output: true
-    permalink: "/compendien/:title"
+    permalink: "/compendien/:path"
   compendien:
     output: true
   

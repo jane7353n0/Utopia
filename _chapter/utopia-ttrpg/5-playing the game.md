@@ -1,6 +1,6 @@
 ---
 title: Playing the Game
-compendium: Basic Rules
+compendium: utopia-ttrpg
 chapter: 5
 layout: chapter
 ---

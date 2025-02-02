@@ -1,6 +1,6 @@
 ---
 title: What’s Utopia TTRPG?
-compendium: Basic Rules
+compendium: utopia-ttrpg
 chapter: 2
 layout: chapter
 ---

@@ -1,6 +1,6 @@
 ---
 title: Advanced Rules
-compendium: Basic Rules
+compendium: utopia-ttrpg
 chapter: 9
 layout: chapter
 ---

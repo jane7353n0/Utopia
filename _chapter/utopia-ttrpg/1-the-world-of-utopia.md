@@ -1,6 +1,6 @@
 ---
 title: The World of Utopia
-compendium: basic-rules
+compendium: utopia-ttrpg
 chapter: 1
 layout: chapter
 ---
