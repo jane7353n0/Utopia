@@ -20,6 +20,27 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: spell
-    label: "spell"
-    folder: "_spells/"
+  - name: compendium
+    label: "Compendium"
+    folder: "_compendien/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: chapter
+    label: "Chapter"
+    folder: "_chapter/"
+    create: true
+    slug: "{{compendium}}/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: Compendium
+        name: compendium
+        widget: relation
+        collection: "compendien"
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+      - { label: "Chapter", name: "chapter", widget: "number"}
+      - { label: "Body", name: "body", widget: "markdown" }

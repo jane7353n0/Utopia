@@ -1,6 +1,11 @@
 collections:
   spells:
     output: true
+  chapter:
+    output: true
+    permalink: "/compendien/:title"
+  compendien:
+    output: true
   
 
 defaults:
@@ -18,11 +23,13 @@ defaults:
     values:
       layout: "spell"
   - scope:
-      path: "/compendien"
+      path: ""
+      type: "compendien"
     values:
       layout: compendium
   - scope:
-      path: "/compendien/basic-rules"
+      path: ""
+      type: "chapter"
     values:
       layout: chapter
 
