@@ -25,6 +25,7 @@ collections:
     folder: "_compendien/"
     create: true
     path: "{{slug}}/index.md"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -33,6 +34,7 @@ collections:
     folder: "_chapter/"
     create: true
     path: "{{compendium}}/{{slug}}"
+    slug: "{{chapter}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: Compendium
