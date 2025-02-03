@@ -14,8 +14,8 @@ Typos and balance issues may persist in this copy of the game. Feel free to crit
 
 If you would like to support this project and its development, please consider supporting Oridont on Patreon or funding Utopia TTRPG on Kickstarter (given you’re reading this prior to November of 2024).
 
-More information can be found at [www.myramyth.com], as well as other Oridont platforms.
-If you’re interesting in this project's development as well as other projects made by the same creator, please consider joining the Discord server: discord.gg/oridont.
+More information can be found at [www.myramyth.com](https://www.myramyth.com), as well as other Oridont platforms.
+If you’re interesting in this project's development as well as other projects made by the same creator, please consider joining the Discord server: [discord.gg/oridont](discord.gg/oridont).
 
 ## Share your Experience
 

@@ -4,19 +4,22 @@
 - name: Collections
   type: Dropdown
   items: 
-  - name: Characters
+  - name: Campaigns (Coming soon)
     type: Link
-    link: /characters
+    link: "#"
+  - name: Characters (Coming soon)
+    type: Link
+    link: "#"
 - name: Compendium
   type: Dropdown
   items:
-  - name: Utopia TTRPG
+  - name: Utopia TTRPG (WiP)
     type: Link
     link: /compendien/utopia-ttrpg
 - name: Rules
   type: Dropdown
   items:
-  - name: Spells
+  - name: Spells (WiP)
     type: Link
     link: /spells
 - name: About
