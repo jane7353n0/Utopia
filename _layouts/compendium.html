@@ -5,16 +5,22 @@
   </head>
   <body>
     {% include navigation.html %}
-    <div class="container">
-      <h1>{{page.title}}</h1>
-      {{ content }}
-      <ol>
-      {% for item in site.pages %}
-      {% if item.compendium == page.title %}
-        <li><a href="{{item.url}}">{{item.title}}</a></li>
-      {% endif %}
-      {% endfor %}
-      </ol>
+    <div class="container d-flex flex-column gap-2">
+      <div>
+        <h1>{{page.title}}</h1>
+        {{ content }}
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Table of Contents</h5>
+        </div>{% assign chapter = site.chapter | where: "compendium", page.slug | sort: "chapter" %}
+        <div class="card-body table-of-content">
+          <ul class="list-unstyled ms-3">{% for item in chapter %}
+            <li class="fw-semibold"><a class="text-decoration-none" href="{{item.url}}">{{item.title}}</a></li>
+            {% assign url = item.url | append: "#" %}{{ item.content | toc_only | replace: "#", url}}
+          {% endfor %}</ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>

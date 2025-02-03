@@ -7,6 +7,12 @@
   - name: Characters
     type: Link
     link: /characters
+- name: Compendium
+  type: Dropdown
+  items:
+  - name: Utopia TTRPG
+    type: Link
+    link: /compendien/utopia-ttrpg
 - name: Rules
   type: Dropdown
   items:

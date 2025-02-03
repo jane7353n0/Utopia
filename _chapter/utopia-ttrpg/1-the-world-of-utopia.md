@@ -8,7 +8,7 @@ In the world of Utopia, you are native to one of two fractured worlds: Pia, the 
 
 Though they are independent of each other, they are not without peaceful communication. Many creatures travel between these bodies often, though the contrast in culture is stark.
 
-## PIA AND UTO
+## Pia and Uto
 
 There are two planetary bodies that exist baked-in to the game’s setting. You may choose to keep this setting or replace it with one of your own.
 

@@ -9,11 +9,11 @@ In the world of Utopia, your character can do just about anything. Although, all
 
 It's a big world, and there’s a lot to take in. If the number of options is intimidating, imagine what your character would do, and see how that translates through this guide. How many turn actions would it take? What kind of resources would your character need to expend to complete this action in regards to your stats, such as stamina?
 
-## LEVELING UP
+## Leveling up
 
 When your character has gained enough experience to level up, there's a number of things that will change, and all for the better (probably).
 
-## RESETTING YOUR XP
+#### Resetting your XP
 
 The amount of XP you need for each level should be 100 times your overall level. For instance, if you are level 20, you need 2,000 XP to get to level 21.
 
@@ -21,9 +21,9 @@ At level 10, once you’ve received 1,000 XP, your current XP will be set to 0, 
 
 Your level can be tracked by adding your Spendable points, Body score, Mind score, and Soul score.
 
-## INCREASING SUBTRAITS
+#### Increasing Subtraits
 
-When your character leVels up, you get achance to increase one of their subtraits, It may be any subtrait, though none of your character’s subtraits can go beyond its maximum:
+When your character levels up, you get achance to increase one of their subtraits, It may be any subtrait, though none of your character’s subtraits can go beyond its maximum:
 Strength and Agility based subtraits cannot be increased past your Body score, minimum of 1.
 
 Intellect and Will based subtraits cannot be increased past your Mind score, minimum of 1.
@@ -32,7 +32,7 @@ Display and Charm based subtraits cannot be increased past your Soul score, mini
 
 The exception: the maximum for subtraits you are gifted in are doubled. For instance, if you have 4 Body points and you are gifted in Fortitude, you may have a maximum Fortitude of 8.
 
-## TRAIT AND SUBTRAIT USAGE
+### Trait and Subtrait Usage
 
 Each trait and subtrait corresponds to a potential test your character may make. Your circumstances change what test will be necessary.
 
@@ -60,7 +60,7 @@ Appeal - Simply, Appeal is how well you can communicate yourself to others in a 
 
 Language - Language is not only how well you speak, but rather how well you communicate with others. This skill includes how easy you can pick up new languages based on previous speech and writing patterns.
 
-## GATHERING TALENTS
+#### Gathering Talents
 
 With each level, you gain a Spendable talent point. Talent points can be spent to gain talents, from either the core talent trees or from your specific species or subspecies tree. Remember, you don’t have to take any talents immediately. You may spend talent points on a talent at any moment, it doesn't even require actions. Although, once you’ve taken on a talent, the points you spend need to be reorganized into your Body, Mind, and Soul scores.
 
@@ -69,7 +69,7 @@ Once you’ve learned a talent, the maximum for some subtraits will be increased
 Each of these stats are calculated as so: ■ Maximum SHP is equal to [Body Score] * [Constitution] + [Level] Maximum DHP is equal to [Soul Score] \* [Effervescence] + [Level] Maximum stamina is equal to [Mind Score] \* [Endurance] + [Level]
 Finally, if the level you’ve reached is a multiple of 10, you must choose a specialist talent. Many specialist talents have prerequisites, but as long as you meet the necessary requirements, youmay acquire it.
 
-## TURN ACTIONS AND INTERRUPT ACTIONS
+## Turn Actions and Interrupt Actions
 
 Turn acfjons ancj interrupt actions are temporal currency of Utopia. WhenyOU are facec| wjth a time-sensitivesituation, such as during combat, everything you do will require a number of turn actions or interrupt actions.
 
@@ -79,37 +79,38 @@ Each turn action and interrupt action represents 1 second of time, though action
 
 If you're in a time sensitive situation but not necessarily interacting with other creatures, it's possible that your turn actions will be independent of other creatures’. For instance, if your party is stuck in a room with only 1 minute of oxygen, your party may be granted 60 turn actions each to escape.
 
-## INTERCHANGING ACTIONS
+#### Interchanging Actions
 
 If you would like to take an action that requires turn actions when it’s not your turn or respond to something on your turn, you may exchange actions in the following way:
 ■ You may spend 2 interrupt actions as if they were 1 turn action.
 
 ■ You may spend 1 turn action as if it was 1 interrupt action.
 
-## ROLLS AND TESTS
+## Rolls and Tests
 
 Any time a creature embarks on a task that requires some level of skill or has some level of difficulty, that creature will make a test.
 
 Each test made is based on one of 6 traits or one of 12 subtraits. To make a test, such as a Power test, a player rolls 3d6 and adds their Power modifier to the roll. This roll’s outcome will determine how successful the player’s character is at doing the given task.
 
-3D6
+#### 3D6
+
 As a player, you will roll 3d6 many times during your adventures, this is a base-level set of dice. Unlike systems that use a d20 for a "test” or “check”, 3d6 reduces radicals. The chance of rolling a 10 with 3d6 is much higher than the chance of rolling a 17.
 
 Keep in mind that the minimum roll for 3d6 is 3, and the maximum roll is 18, especially when considering test difficulty.
 
-## TEST DIFFICULTY
+#### Test Difficulty
 
-For any given test, there should be a testdifficulty (TD).
+For any given test, there should be a test difficulty (TD).
 
 The test difficulty is the minimum roll needed to succeed in doing the task.
 
 For instance, if your character is attempting to dodge falling debris, they may make an Agility test. The GM will generate an appropriate TD, though often the players will not know what it is before rolling. In this example, it will be 10. If the character rolls a 10 or higher, they successfully avoid the debris.
 
-## CONTESTING
+#### Contesting
 
 Sometimes, you’ll be directly pitted against another opponent. In these cases, such as during an attempted grapple, you will contest another creature. This means that your test will be compared to another’s test, and the higher roll will win the contest.
 
-## TIEBREAKERS
+#### Tiebreakers
 
 Any time a creature is rolling against another, whether that be durings tests, blocking, dodging, or other circumstances, there is a chance that both roll the same final number. In these cases:
 If a PC is rolling against an NPC, the PC wins the tie.
@@ -122,43 +123,43 @@ If the above is true and both have the same modifier, the creature of higher lev
 
 ■ If the above is true and both creatures have the same level or DR, oneis chosen at random.
 
-## FAVOR AND DISFAVOR
+#### Favor and Disfavor
 
 If luck is on your side, or perhaps you are both blind and deaf, you may have some points of favor or disfavor on a roll. Any unruled circumstance that would push a roll slightly one way can cause a point of favor or disfavor, though exactly which events do are up to GM discretion.
 
 For each point of favor you have on a roll, you roll an additional ld6. For each point of disfavor you have on a roll, you remove a d6. If you have enough disfavor to roll zero dice, the test is automatically failed.
 
-## CRITICAL SUCCESSES AND FAILURES
+## Critical Success and Failures
 
 On very rare occasions, a roll may be so successful (or so disastrous) that it has extreme outcomes. If three or more 6’s are rolled during a test, it is considered a critical success. Its roll’s overall value, before modifiers, is doubled. So if you roll 18 on a test using 3d6, treat it as if you rolled a 36. Critical successes are more likely withfavor and impossible with disfavor, due to the number of dice. If every die rolled during a test is a 1, it is considered a critical failure. The roll’s value becomes 0 and ignores modifiers. If you had a point of disfavor on a test and you rolled a 2, you would have rolled a critical failure. The outcome of critical successes and critical failures should have additional effects that aids or hinders the inten- tions respectively. The specifics of the outcome are up to GM discretion.
 
-## STANDARD ACTIONS
+## Standard Actions
 
 Standard actions are actions that any creature is capable of, given it can foot the necessary costs. It’s important to be aware of your capabilities during tense moments such as combat.
 
-## ATTACK
+#### Attack
 
 The Attack action allows a creature to make an attack against a creature or object. If not using a weapon, this requires 2 turn actions. Weaponless attacks naturally deal 1d8 Physical damage. Otherwise, the amount of turn actions necessary is depicted by the used weapon.
 
-## MULTI-WEAPON ATTACKS
+#### Multi-Weapon Attacks
 
-A creature may attack with any numberof weapons simultaneously, given it canuse all functionally this way. Whenmaking an attack this way, the number ofturn actions required is equal to the highest needed of the weapons. Rollsmade this way are reduced by half, rounded down. Modifiers, although, arestill calculated as normal when attacking this way.
+A creature may attack with any number of weapons simultaneously, given it canuse all functionally this way. Whenmaking an attack this way, the number ofturn actions required is equal to the highest needed of the weapons. Rollsmade this way are reduced by half, rounded down. Modifiers, although, arestill calculated as normal when attacking this way.
 
-## RANGED WEAPONS
+#### Ranged Weapons
 
 Ranged weapons (weapons with 3 meters of range or more) should have two separate metrics: a close range and a far range (often detailed as close/farOr 30/60, for example). When you make an attack with a rangedweapon, you must make a Dexterity testagainst the number of meters away the target is. If it’s within the weapon’s closerange, you gain a point of favor, whereasyou gain a point of disfavor for targetswithin the weapon’s far range. Uponfailing the test, you miss the attack.
 
-### AIM
+#### Aim
 
 The Aim action allows you to spend 1 turn action to increase your accuracy on a ranged attack. Whenever you take the Aim action, you gain 1 point of favor on your next ranged attack. If you take any actions after the Aim action but before making a ranged attack, you lose the effects of aiming.
 
-### TRAVEL
+#### Travel
 
 The Travel action allows a creature to spend 1 turn action to move a number of meters equal to its travel distance.
 
 There are 3 types of travel: Land travel, Water travel, and Air travel. These types of travel are detailed later in this chapter.
 
-### STEALTH
+#### Stealth
 
 If you would like to take an action while remaining inconspicuous, you must make a Dexterity test contested against each other present creatures’ Awareness score. The following conditions may affect this roll:
 If any number of creatures were suspicious of your presence or have information on your potential location, you gain a point of disfavor. If you were already seen by creatures you’re attempting to remain inconspicuous from, they instead make an Awareness test against your Dexterity test. You gain a point of disfavor and each other creature gains a point of favor.
@@ -171,39 +172,39 @@ If the terrain or circumstance is distracting for potentially suspecting creatur
 
 You may spend double the amount of time while attempting to remain inconspicuous to gain a point of favor on the test. This effect may be used up to twice per action.
 
-## DEEP BREATH
+#### Deep Breath
 
 The Deep Breath action allows a creature to spend 1 turn action to regain 1 stamina.
 
-## LEAP
+#### Leap
 
 The Leap action allows a creature to spend 3 turn actions and 3 stamina to leap. The distance or height a creature can leap is equal to its Power score. If a creature used at least 2 meters of travel directly prior, its leap distance is equal to its Strength score instead.
 
-## ENVIRONMENTAL EFFECTS
+##### Environmental Effects
 
 If a creature takes the Leap action in circumstances other than basic terrain under Pia’s gravity, the distance a creature may leap may change.
 
 On Uto, the distance a creature can leap is multiplied by 6.
 
-## BLOCK
+#### Block
 
 If a creature is subject to damage from a source it is aware of, it may spend 1 turn action or 1 interrupt action to take the Block action. It rolls its Block Rating, reducing the damage dealt by the roll.
 
 A creature cannot block or dodge a single source of damage more than once.
 
-## DODGE
+#### Dodge
 
 If a creature is subject to damage from a source it is aware of, it may spend 1 turn action or 1 interrupt action to take the Dodge action. It rolls its Dodge Rating. If the roll is equal to or higher than the damage that would be dealt after defenses, all damage is prevented.
 
 A creature cannot block or dodge a single source of damage more than once.
 
-## TAKE COVER
+#### Take Cover
 
 If a creature is subject to damage from a source they are aware of, it may spend 1 turn action or 1 interrupt action to take the Take Cover action, doubling its Block Rating and Dodge Rating for the rest of the turn.
 
 In order for a creature to be able to take the Take Cover action, there must be an applicable obstacle against the source of damage.
 
-## GRAPPLE
+#### Grapple
 
 The Grapple action allows a creature to spend 3 turn actions and 2 stamina to attempt to restrain another adjacent creature that is the same size or smaller.
 
@@ -213,7 +214,7 @@ Grappled creatures cannot take the Travel action. Whenever the grappler moves, t
 
 A creature may spend 1 interrupt action or 2 turn actions as well as 2 stamina, up to once per turn, to attempt another contested Strength or Agility test against the grappler. If the grappler chooses to attempt the test, its stamina is reduced by 2.
 
-## SCALE
+#### Scale
 
 The Scale action allows a creature to spend 3 turn actions and 4 stamina to attempt to climb onto another adjacent creature that is the same size or larger. The targeted creature must make a contest (Strength if it's equal size, Agility if it’s larger) against the scaling creature’s Agility test. If the targeted creature fails, the scaling creature successfully scales it.
 

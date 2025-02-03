@@ -48,6 +48,24 @@
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Compendium
+          </a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a class="dropdown-item" href="/compendien/utopia-ttrpg">Utopia TTRPG</a></li>
+            <!--<li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+            
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Rules
           </a>
           <ul class="dropdown-menu">
@@ -81,11 +99,31 @@
   </div>
 </nav>
 
-    <div class="container">
-      <h1>Creating a Character</h1>
-      <p>Since your character will act as your avatar in the world of Utopia, you have full freedom to customize this character, from where its fundamental statistics are distributed, down to where they grew up and why they chose to embark on such a journey in the first place.</p>
+    <div class="container container-sm">
+      <div class="row">
+        <div class="d-none d-lg-grid col-lg-3"></div>
+        <div class="col"><h1>Creating a Character</h1></div>
+      </div>
+      <div class="row row-columns-auto">
+        <div class="d-none d-lg-grid col-lg-3" id="table-of-contents">
+            <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#species">Species</a></li>
+<li class="toc-entry toc-h2"><a href="#setting-up-stats">Setting up Stats</a></li>
+<li class="toc-entry toc-h2"><a href="#talents">Talents</a>
+<ul class="subsection-nav">
+<li class="toc-entry toc-h3"><a href="#specialist-talents">Specialist Talents</a></li>
+<li class="toc-entry toc-h3"><a href="#updating-stats">Updating Stats</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#calculation-modifiers">Calculation Modifiers</a></li>
+<li class="toc-entry toc-h2"><a href="#languages">Languages</a></li>
+<li class="toc-entry toc-h2"><a href="#travel-speeds">Travel Speeds</a></li>
+</ul>
+        </div>
+        <div class="col" id="markdown-content">
+          <p>Since your character will act as your avatar in the world of Utopia, you have full freedom to customize this character, from where its fundamental statistics are distributed, down to where they grew up and why they chose to embark on such a journey in the first place.</p>
 
-<h2 id="species">SPECIES</h2>
+<h2 id="species">Species</h2>
 
 <p>The first and most vital decision to make for your character is its species. There are seven core species to choose from: human, automaton, dwarf, cyborg, oxtus, elf, and cambion. More information can be found for each species in their respective chapters.</p>
 
@@ -95,7 +133,7 @@
 
 <p>Once you’ve come to a decision, scribe the title of the chosen species and subspecies into the Species field, found in Boxl.</p>
 
-<h2 id="setting-up-stats">SETTING UP STATS</h2>
+<h2 id="setting-up-stats">Setting up Stats</h2>
 
 <p>Next step, scribing in your static stats. First, write your Block Rating and Dodge Rating into Box 2. These can be found on your species page. Your character’s Block Rating, generally in the form of d4’s, is a metric of how well it can negate incoming damage that they’re aware of. Your character’s Dodge Rating, generally in the form of d12’s, is a metric of how well your character can avoid damage completely.</p>
 
@@ -105,26 +143,33 @@
 
 <p>The dynamic stats will change over the course of character creation, but a base should be created for calculating. For now, set all of your subtraits, the smaller left-hand fields, in Box 8 to 1 each. Check the box next to each subtrait you are gifted in.</p>
 
-<h2 id="talents">TALENTS</h2>
+<h2 id="talents">Talents</h2>
 
 <p>Next part will be your choice. In Box 7, there are four fields: your spendable talent points at top, and 3 different attributed points; specifically, Body, Mind, and Soul points. You can spend Talent Points on talents, and you begin at level 10 with 10 Spendable Points. There are three types of trees you can spend these on: species talent trees, subspecies talent trees, and core talent trees. All talents cost a number of attributed points. When you obtain a talent, you convert your talent points to Body, Mind, and Soul points respective to the chosen talent’s cost.</p>
 
 <p>Choose any number of talents you can afford, and write those talents down. Keep in mind, you don’t have to spend all your points. Rather, you may save up to 5 Spendable Points for talents in the future. Obtaining a talent may be done at instant speed with no cost of time, regardless of whether you’re in combat or enjoying downtime.</p>
 
-<h2 id="specialist-talents">SPECIALIST TALENTS</h2>
+<h3 id="specialist-talents">Specialist Talents</h3>
 
 <p>Every 10 levels, you’ll receive a specialist talent. Most specialist talents have prerequisites, anything from having specific talents, minimum score values, or even being a certain species.</p>
 
 <p>To start off, being level 10, you’ll get your first initial specialist talent.</p>
 
-<p>#- UPDATING STATS</p>
+<h3 id="updating-stats">Updating Stats</h3>
 
 <p>Now that you have your attributed points in place, this will set the stage for your final character creation steps.</p>
 
 <p>You’ll write in your Surface Health Points (SHP) in and Deep Health Points (DHP) in Box 4. The amount you have of each is based on your Body and Soul points respectively. The same is true for your stamina in Box 6, that of which is dependent on your Mind points.</p>
 
-<p>Each of these stats are calculated as so: Maximum SHP is equal to [Body Score] * [Constitution] + [Level] ■ Maximum DHP is equal to [Soul Score] * [Effervescence] + [Level] Maximum stamina is equal to [Mind Score] * [Endurance] + [Level]
-Over time, your maximum SHP, DHP, and stamina will increase as your Body, Mind, and Soul score increase. As well, you may increase your Constitution, Endurance, and Effervescence using the Prowess core talent tree. As these numbers change, your maximum stats will have to be recalculated.</p>
+<p>Each of these stats are calculated as so:</p>
+
+<ul>
+  <li>Maximum SHP is equal to [Body Score] * [Constitution] + [Level]</li>
+  <li>Maximum DHP is equal to [Soul Score] * [Effervescence] + [Level]</li>
+  <li>Maximum stamina is equal to [Mind Score] * [Endurance] + [Level]</li>
+</ul>
+
+<p>Over time, your maximum SHP, DHP, and stamina will increase as your Body, Mind, and Soul score increase. As well, you may increase your Constitution, Endurance, and Effervescence using the Prowess core talent tree. As these numbers change, your maximum stats will have to be recalculated.</p>
 
 <p>Do note, the left-hand of each field is your current amount of a given total, which will change whenever you take damage or expend energy. The right-hand of each field is your maximum, which should only be modified when you obtain new talents.</p>
 
@@ -144,9 +189,7 @@ Over time, your maximum SHP, DHP, and stamina will increase as your Body, Mind, 
 
 <p>The exception: the maximum for subtraits you are gifted in are doubled. For instance, if you have 4 Body points and you are gifted in Fortitude, you may have a maximum Fortitude of 8.</p>
 
-<p>The exception: the maximum for subtraits you are gifted in are doubled. For instance, if you have 4 Body points and you are gifted in Fortitude, you may have a maximum Fortitude of 8.</p>
-
-<h2 id="calculating-modifiers">CALCULATING MODIFIERS</h2>
+<h2 id="calculation-modifiers">Calculation Modifiers</h2>
 
 <p>You’ll need to calculate your modifiers before you’re ready to begin adventuring. Each trait score is equal to the sum of its subtraits. For instance, if you have a Fortitude score of 3 and a Power scoreof 4, your Strength score is 7.</p>
 
@@ -156,11 +199,11 @@ Over time, your maximum SHP, DHP, and stamina will increase as your Body, Mind, 
 
 <p>Now, calculate modifiers similarly for your traits. The number will be written to the right of each trait.</p>
 
-<h2 id="languages">LANGUAGES</h2>
+<h2 id="languages">Languages</h2>
 
 <p>In the Languages text box, found in Box 13, make sure to write whatever languages your species knows innately. This will decide what creatures you can communicate with and which creatures will be across a language barrier.</p>
 
-<h2 id="travel-speeds">TRAVEL SPEEDS</h2>
+<h2 id="travel-speeds">Travel Speeds</h2>
 
 <p>The last thing you’ll need to do is update your character’s Travel speeds according to their subtraits in Box 10.</p>
 
@@ -170,6 +213,8 @@ Over time, your maximum SHP, DHP, and stamina will increase as your Body, Mind, 
 
 <p>Your Air Travel will be 0 unless otherwise stated (only the Cambion species has an innate Air travel.)</p>
 
+        </div>
+      </div>
     </div>
   </body>
 </html>

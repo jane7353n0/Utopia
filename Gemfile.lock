@@ -40,6 +40,9 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-toc (0.19.0)
+      jekyll (>= 3.9)
+      nokogiri (~> 1.12)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jekyll_picture_tag (2.1.2)
@@ -63,10 +66,13 @@ GEM
       logger
       mime-types-data (~> 3.2015)
     mime-types-data (3.2025.0107)
+    nokogiri (1.18.2-x64-mingw-ucrt)
+      racc (~> 1.4)
     objective_elements (1.1.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
+    racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
     rb-fsevent (0.11.2)
@@ -94,6 +100,7 @@ DEPENDENCIES
   font-awesome-sass (~> 6.7)
   jekyll (~> 4.3)
   jekyll-sitemap
+  jekyll-toc (~> 0.19.0)
   jekyll_picture_tag (~> 2.0)
 
 BUNDLED WITH

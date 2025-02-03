@@ -6,6 +6,10 @@ collections:
     permalink: "/compendien/:path"
   compendien:
     output: true
+  spezies:
+    output: true
+  subspezies:
+    output: false
   
 
 defaults:
@@ -27,12 +31,26 @@ defaults:
       type: "compendien"
     values:
       layout: compendium
+      toc: true
   - scope:
       path: ""
       type: "chapter"
     values:
       layout: chapter
+      toc: true
+
+toc:
+  min_level: 2
+  max_level: 3
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: subsection-nav
+  item_class: toc-entry
+  item_prefix: toc-
 
 plugins:
  - jekyll-sitemap
+ - jekyll-toc
 

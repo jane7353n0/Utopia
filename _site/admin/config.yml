@@ -30,12 +30,14 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: chapter
     label: "Chapter"
+    summary: "{{compendium}} Chapter {{chapter}} - {{title}}"
     folder: "_chapter/"
     create: true
     path: "{{compendium}}/{{chapter}}-{{slug}}"
     view_groups: 
       - label: Compendium
         field: compendium
+    sortable_fields: ['commit_date', 'title', 'chapter', 'commit_author']
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: Compendium

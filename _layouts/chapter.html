@@ -5,9 +5,19 @@
   </head>
   <body>
     {% include navigation.html %}
-    <div class="container">
-      <h1>{{ page.title }}</h1>
-      {{ content }}
+    <div class="container container-sm">
+      <div class="row">
+        <div class="d-none d-lg-grid col-lg-3"></div>
+        <div class="col"><h1>{{ page.title }}</h1></div>
+      </div>
+      <div class="row row-columns-auto">
+        <div class="d-none d-lg-grid col-lg-3" id="table-of-contents">
+            {% toc %}
+        </div>
+        <div class="col" id="markdown-content">
+          {{ content }}
+        </div>
+      </div>
     </div>
   </body>
 </html>
