@@ -1,7 +1,7 @@
 ---
 title: Dispell
 type: Utility
-school: [Enchantment]
+artistry: [Enchantment]
 duration: Immediate
 range: Touch
 aoe: Target spell

@@ -1,7 +1,7 @@
 ---
 title: Fabricate
 type: Utility
-school: [Evocation, Enchantment]
+artistry: [Evocation, Enchantment]
 duration: 1 minute
 range: Touch 
 aoe: Self

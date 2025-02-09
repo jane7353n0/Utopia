@@ -1,7 +1,7 @@
 ---
 title: Preserve
 type: Aid
-school: [Array, Necromancy]
+artistry: [Array, Necromancy]
 duration: Concentration
 range: 10 meters
 aoe: Target creature with less than 1 DHP that hasn't died yet

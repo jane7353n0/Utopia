@@ -1,7 +1,7 @@
 ---
 title: Battle Scry
 type: Aid
-school: [Wake, Enchantment, Divination]
+artistry: [Wake, Enchantment, Divination]
 duration: 1 minute of Focus 
 range: Touch
 aoe: All creatures within 2 meters

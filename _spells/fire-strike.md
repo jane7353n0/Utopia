@@ -1,7 +1,7 @@
 ---
 title: Fire Strike
 type: Combat
-school: [Evocation, Array]
+artistry: [Evocation, Array]
 duration: Immediate 
 range: 20 meters 
 aoe: Target object or creature

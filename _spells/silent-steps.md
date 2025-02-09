@@ -1,7 +1,7 @@
 ---
 title: Silent Steps
 type: Aid
-school: [Enchantment]
+artistry: [Enchantment]
 duration: Concentration
 range: Touch
 aoe: Self

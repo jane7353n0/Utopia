@@ -1,7 +1,7 @@
 ---
 title: Sweetfire
 type: Combat
-school: [Evocation, Array, Enchantment, Illusion]
+artistry: [Evocation, Array, Enchantment, Illusion]
 duration: 1 minute of Focus 
 range: 5 meters 
 aoe: Target creature

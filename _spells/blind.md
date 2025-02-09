@@ -1,7 +1,7 @@
 ---
 title: Blind
 type: Debilitation
-school: [Array, Illusion]
+artistry: [Array, Illusion]
 duration: Concentration
 range: 15 meters
 aoe: Target creature

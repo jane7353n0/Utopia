@@ -1,7 +1,7 @@
 ---
 title: Third Eye
 type: Ascertainment
-school: [Divination]
+artistry: [Divination]
 duration: Concentration
 range: Touch
 aoe: Target object

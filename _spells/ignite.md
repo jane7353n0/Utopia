@@ -1,7 +1,7 @@
 ---
 title: Ignite
 type: Utility
-school: [Evocation]
+artistry: [Evocation]
 duration: Concentration 
 range: Touch
 aoe: Target object

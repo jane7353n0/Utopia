@@ -1,7 +1,7 @@
 ---
 title: Electrodute
 type: Combat
-school: [Evocation, Array]
+artistry: [Evocation, Array]
 duration: Concentration 
 range: 10 meters
 aoe: Target object or creature

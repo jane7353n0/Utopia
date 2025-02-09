@@ -1,7 +1,7 @@
 ---
 title: Fear
 type: Debilitation
-school: [Illusion, Divination]
+artistry: [Illusion, Divination]
 duration: Concentration
 range: Touch
 aoe: Target creature

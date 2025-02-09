@@ -1,7 +1,7 @@
 ---
 title: Flight
 type: Aid
-school: [Enchantment, Alteration]
+artistry: [Enchantment, Alteration]
 duration: 1 minute 
 range: Touch
 aoe: Target creature

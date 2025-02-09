@@ -1,7 +1,7 @@
 ---
 title: Ressurect
 type: Animation
-school: [Necromancy]
+artistry: [Necromancy]
 duration: Immediate
 range: Touch
 aoe: Target DR X or level X creature with less than 1 DHP that hasn't died yet.

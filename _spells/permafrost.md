@@ -1,7 +1,7 @@
 ---
 title: Permafrost
 type: Debilitation
-school: [Evocation, Array, Enchantment, Alteration]
+artistry: [Evocation, Array, Enchantment, Alteration]
 duration: 1 minute
 range: 15 meters
 aoe: Target creature

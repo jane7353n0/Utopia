@@ -1,7 +1,7 @@
 ---
 title: Telekinesis
 type: Utility
-school: [Array, Alteration]
+artistry: [Array, Alteration]
 duration: Concentration
 range: 10 meters
 aoe: Target object or creature

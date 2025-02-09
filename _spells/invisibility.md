@@ -1,7 +1,7 @@
 ---
 title: Invisibility
 type: Utility
-school: [Array, Enchantment, Illusion]
+artistry: [Array, Enchantment, Illusion]
 duration: 1 minute of Focus 
 range: 5 meters
 aoe: Up to 2 target creatures

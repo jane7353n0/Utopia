@@ -1,7 +1,7 @@
 ---
 title: Mage Armor
 type: Aid
-school: [Evocation, Enchantment]
+artistry: [Evocation, Enchantment]
 duration: 1 minute of Focus 
 range: Touch
 aoe: Target creature

@@ -1,7 +1,7 @@
 ---
 title: Make Feeble
 type: Debilitation
-school: [Enchantment, Alteration]
+artistry: [Enchantment, Alteration]
 duration: 1 hour of Focus
 range: Touch
 aoe: Target creature

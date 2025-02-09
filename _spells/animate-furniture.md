@@ -1,7 +1,7 @@
 ---
 title: Animate Furniture
 type: Animation
-school: [Enchantment, Necromancy]
+artistry: [Enchantment, Necromancy]
 duration: 1 minute of Focus 
 range: Touch
 aoe: Target Large object

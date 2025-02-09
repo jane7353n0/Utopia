@@ -1,7 +1,7 @@
 ---
 title: Energize
 type: Combat
-school: [Evocation]
+artistry: [Evocation]
 duration: Immediate
 range: Touch
 aoe: Target weapon that isn't currently imbued

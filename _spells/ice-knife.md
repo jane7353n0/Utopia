@@ -1,7 +1,7 @@
 ---
 title: Ice Knife
 type: Combat
-school: [Evocation, Array]
+artistry: [Evocation, Array]
 duration: Immediate
 range: 10 meters
 aoe: Target object or creature

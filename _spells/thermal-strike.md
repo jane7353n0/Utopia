@@ -1,7 +1,7 @@
 ---
 title: Thermal Strike
 type: Combat
-school: [Evocation]
+artistry: [Evocation]
 duration: Concentration
 range: Touch
 aoe: Target object or creature

@@ -1,7 +1,7 @@
 ---
 title: Elemental Armor
 type: Aid
-school: [Evocation, Enchantment]
+artistry: [Evocation, Enchantment]
 duration: 1 minute 
 range: Touch 
 aoe: Target creature

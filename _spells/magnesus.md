@@ -1,7 +1,7 @@
 ---
 title: Magnesus
 type: Combat
-school: [Array, Wake, Enchantment, Alteration]
+artistry: [Array, Wake, Enchantment, Alteration]
 duration: 1 minute
 range: 25 meters
 aoe: Target object or creature

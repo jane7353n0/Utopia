@@ -1,7 +1,7 @@
 ---
 title: Locate Object
 type: Ascertainment
-school: [Divination]
+artistry: [Divination]
 duration: Concentration
 range: Touch
 aoe: Self

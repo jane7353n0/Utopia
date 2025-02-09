@@ -1,7 +1,7 @@
 ---
 title: Disguise Self
 type: Utility
-school: [Enchantment, Illusion]
+artistry: [Enchantment, Illusion]
 duration: 1 hour of Focus 
 range: Touch
 aoe: Target creature

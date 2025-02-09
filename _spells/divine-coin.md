@@ -1,7 +1,7 @@
 ---
 title: Divine Coin
 type: Ascertainment
-school: [Divination]
+artistry: [Divination]
 duration: Immediate
 range: Touch
 aoe: Self

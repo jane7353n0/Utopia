@@ -1,7 +1,7 @@
 ---
 title: Fireball
 type: Combat
-school: [Evocation, Array, Wake]
+artistry: [Evocation, Array, Wake]
 duration: Concentration
 range: 15 meters
 aoe: All objects and creatures within 4 meters of a chosen point

@@ -1,7 +1,7 @@
 ---
 title: Thermal Blast
 type: Combat
-school: [Evocation, Array, Wake]
+artistry: [Evocation, Array, Wake]
 duration: Concentration
 range: 10 meters
 aoe: All objects and creatures within 2 meters of a chosen point

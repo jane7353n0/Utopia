@@ -1,7 +1,7 @@
 ---
 title: Lightning Bolt
 type: Combat
-school: [Evocation, Wake]
+artistry: [Evocation, Wake]
 duration: Concentration
 range: 5 meters
 aoe: All objects and creatures between the caster's starting position and a chosen point

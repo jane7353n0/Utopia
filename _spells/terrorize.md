@@ -1,7 +1,7 @@
 ---
 title: Terrorize
 type: Combat
-school: [Illusion]
+artistry: [Illusion]
 duration: Concentration
 range: Touch
 aoe: Target creature

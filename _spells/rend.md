@@ -1,7 +1,7 @@
 ---
 title: Rend
 type: Combat
-school: [Necromancy]
+artistry: [Necromancy]
 duration: Concentration 
 range: Touch
 aoe: Target creature

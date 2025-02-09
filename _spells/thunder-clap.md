@@ -1,7 +1,7 @@
 ---
 title: Thunder Clap
 type: Combat
-school: [Evocation, Wake]
+artistry: [Evocation, Wake]
 duration: Immediate
 range: Touch
 aoe: All objects and creatures within a 90-degree cone extending 3 meters from the caster

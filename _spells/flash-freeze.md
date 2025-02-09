@@ -1,7 +1,7 @@
 ---
 title: Flash Freeze
 type: Combat
-school: [Evocation, Wake]
+artistry: [Evocation, Wake]
 duration: Concentration
 range: Touch
 aoe: All objects and creatures on the same surface as the caster's starting position within 10 meters

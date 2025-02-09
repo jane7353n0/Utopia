@@ -1,7 +1,7 @@
 ---
 title: Cleanse
 type: Utility
-school: [Alteration]
+artistry: [Alteration]
 duration: Immediate
 range: Touch
 aoe: Target impure object or liquid

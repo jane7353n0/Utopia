@@ -1,7 +1,7 @@
 ---
 title: Luck
 type: Aid
-school: [Wake, Enchantment, Divination]
+artistry: [Wake, Enchantment, Divination]
 duration: 1 minute
 range: Touch
 aoe: All creatures within 5 meters

@@ -1,7 +1,7 @@
 ---
 title: Crackling Dart
 type: Combat
-school: [Evocation, Array]
+artistry: [Evocation, Array]
 duration: Immediate
 range: 5 meters
 aoe: Target object or creature

@@ -1,7 +1,7 @@
 ---
 title: Premonition Dream
 type: Ascertainment
-school: [Enchantment, Divination]
+artistry: [Enchantment, Divination]
 duration: 1 hour
 range: Touch
 aoe: Self

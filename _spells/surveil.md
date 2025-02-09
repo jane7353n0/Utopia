@@ -1,7 +1,7 @@
 ---
 title: Surveil
 type: Ascertainment
-school: [Divination]
+artistry: [Divination]
 duration: Immediate
 range: Touch
 aoe: Target creature

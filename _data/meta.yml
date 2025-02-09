@@ -1,0 +1,139 @@
+traits:
+  - name: Agility
+    content: folgt
+    subtraits: 
+    - name: Speed
+      content: Your Speed isn't just a direct correlation to how fast you can run in meters per second, but also how quickly you can gain momentum in a moment’s notice. This subtrait will affect how far you can move in a turn.
+    - name: Dexterity
+      content:  Your Dexterity includes how diligent your fine motor functions are, including sleight of hand, sneaking, and swiftness. This subtrait will affect how accurate you are with ranged weapons.
+  - name: Strength
+    content: folgt
+    subtraits: 
+    - name: Power
+      content: Your Power resembles how much force you can put behind your swing or your leap. How much effort you can put into a swift motion.
+    - name: Fortitude
+      content: Your Fortitude will constitute how much your body can handle, whether that be toxins, alcohol, or just simply a good beating.
+  - name: Intellect
+    content: folgt
+    subtraits: 
+    - name: Engineering
+      content: One’s Engineering is how well one may operate and manipulate a working system, including things such as technology or even the human body.
+    - name: Memory
+      content:  Your Memory score derives how well you can recall previously processed information. Not just ideas, but events in great detail.
+  - name: Will
+    content: folgt
+    subtraits: 
+    - name: Resolve
+      content: Your Resolve deduces how you react under pressure, a mental fortitude you hold. The more resolve you have, the more mental taxation you can withstand. This subtrait will affect the power of spells you can cast.
+    - name: Awareness
+      content: Your level of Awareness shows how alert you are, how observant you are, and how prepared you are on a passive and active basis.
+  - name: Display
+    content: folgt
+    subtraits: 
+    - name: Portrayal
+      content: Your Portrayal helps you resemble something that you may not always be; this includes your ability to replicate social behavior, intimidate others, or simply lie.
+    - name: Stunt
+      content: Your Stunt shows how well you can keep your balance understand your body in a three-dimensional space. The more stunt you have, the better you are at positioning yourself, regardless of your grounding.
+  - name: Charm
+    content: folgt
+    subtraits: 
+    - name: Appeal
+      content: Simply, Appeal is how well you can communicate yourself to others in a beneficial manner. The more appealing you are, the better you are at interacting with others.
+    - name: Language
+      content: Language is not only how well you speak, but rather how well you communicate with others. This skill includes how easy you can pick up new languages based on previous speech and writing patterns.
+actions:
+  type:
+  - name: Turn Action
+    short: TA
+  - name: Interrupt Action
+    short: IA
+  standard_actions:
+  - name: Attack
+    action_time: 2 TA
+    stamina: 0
+  - name: Aim
+    action_time: 1 TA
+    stamina: 0
+  - name: Travel
+    action_time: 1 TA
+    stamina: 0
+  - name: Deep Breath
+    action_time: 1 TA
+    stamina: 0
+  - name: Block
+    action_time: 1 TA
+    stamina: 0
+  - name: Dodge
+    action_time: 1 TA
+    stamina: 0
+  - name: Take Cover
+    action_time: 1 TA
+    stamina: 0
+  - name: Grapple
+    action_time: 1 TA
+    stamina: 0
+  - name: Scale
+    action_time: 1 TA
+    stamina: 0
+  - name: Hold Action
+    action_time: 1 TA
+    stamina: 0
+  - name: Assist
+    action_time: 1 TA
+    stamina: 0
+spells:
+  artistry:
+  - name: Evocation
+  - name: Array
+  - name: Wake
+  - name: Enchantment
+  - name: Necromancy
+  - name: Divination
+  - name: Illusion
+  - name: Alteration
+  type:
+  - name: Combat
+  - name: Aid
+  - name: Utility
+  - name: Debilitation
+  - name: Ascertainment
+  - name: Animation
+items:
+  type:
+  - name: Weapon
+    content: "**Weapons** naturally modify how many turn actions it’ll require for you to attack, as well as how much damage you deal for each attack. You can hold multiple weapons at once, though both will work at lower efficiency if you’re not trained properly."
+    subtype:
+    - name: Slow Weapon
+    - name: Moderate Weapon
+    - name: Fast Weapon
+    - name: Ammunitions
+  - name: Armor
+    content: "**Armor** will take up one of four slots you have available: your head slot, your chest slot, your hands slot, or your feet slot. The most basic form of armor will either raise your defenses or offer you additional Block Rating or Dodge Rating. Though, some armor pieces have other specialized benefits."
+    subtypes:
+    - name: Head Armor
+    - name: Chest Armor
+    - name: Hand Armor
+    - name: Feet Armor
+    - name: Shield
+  - name: Consumables
+    content: "**Consumables** generally include potions, edible substances, salves, injections, and plenty of other things that only work a number of times before the item is destroyed or rendered useless. Generally these come at lower costs due to their sparse use but also comprise one of the only forms of portable healing available."
+  - name: Artifacts
+    content: "**Artifacts** comprise just about every other item, including and not limited to back equipment, neck equipment, waist equipment, and rings. Some artifacts will take up one of those four slots, whereas others require a free hand to operate. These come with a plethora of unique features, including storing items, traversing terrain remotely, and offering passive buffs to the user."
+    subtypes:
+    - name: Back Equipment
+    - name: Neck Equipment
+    - name: Waist Equipment
+    - name: Ring
+    - name: Artifact
+crafting_components:
+  category:
+  - name: Material
+  - name: Refinement
+  - name: Power
+  quality:
+  - name: Crude
+  - name: Common
+  - name: Extraordinary
+  - name: Rare
+  - name: Legendary
+  - name: Mythical

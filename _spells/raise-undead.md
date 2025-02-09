@@ -1,7 +1,7 @@
 ---
 title: Raise Undead
 type: Animation
-school: [Enchantment, Necromancy]
+artistry: [Enchantment, Necromancy]
 duration: 1 minute
 range: Touch
 aoe: Target humanoid carcass

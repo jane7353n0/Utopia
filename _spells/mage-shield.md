@@ -1,7 +1,7 @@
 ---
 title: Mage Shield
 type: Aid
-school: [Evocation, Enchantment]
+artistry: [Evocation, Enchantment]
 duration: 1 minute of Focus once triggered 
 range: Touch
 aoe: Self

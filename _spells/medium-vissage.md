@@ -1,7 +1,7 @@
 ---
 title: Medium Vissage
 type: Utility
-school: [Array, Enchantment, Illusion]
+artistry: [Array, Enchantment, Illusion]
 duration: 1 hour of Focus 
 range: 10 meters
 aoe: Chosen point within range

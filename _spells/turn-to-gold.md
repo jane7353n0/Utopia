@@ -1,7 +1,7 @@
 ---
 title: Turn to Gold
 type: Utility
-school: [Enchantment, Alteration]
+artistry: [Enchantment, Alteration]
 duration: 1 hour
 range: Touch 
 aoe: Target object

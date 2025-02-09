@@ -1,7 +1,7 @@
 ---
 title: Bind
 type: Debilitation
-school: [Array, Enchantment, Alteration]
+artistry: [Array, Enchantment, Alteration]
 duration: 1 minute
 range: 20 meters
 aoe: Target creature

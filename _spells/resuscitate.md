@@ -1,7 +1,7 @@
 ---
 title: Resuscitate
 type: Aid
-school: [Necromancy ]
+artistry: [Necromancy ]
 duration: Immediate
 range: Touch
 aoe: Target creature with less than 1 DHP that hasn't died yet

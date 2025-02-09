@@ -1,7 +1,7 @@
 ---
 title: Water Breathing
 type: Aid
-school: [Enchantment, Alteration]
+artistry: [Enchantment, Alteration]
 duration: 1 hour of Focus
 range: Touch
 aoe: Self

@@ -1,3 +1,4 @@
+top_menu:
 - name: Home
   type: Link
   link: /

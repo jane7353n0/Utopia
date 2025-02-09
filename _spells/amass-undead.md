@@ -1,7 +1,7 @@
 ---
 title: Amass Undead
 type: Animation
-school: [Wake, Enchantment, Necromancy]
+artistry: [Wake, Enchantment, Necromancy]
 duration: 1 hour
 range: Touch
 aoe: All humanoid carcasses on the same surface as the caster’s starting position

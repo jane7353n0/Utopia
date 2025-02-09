@@ -1,7 +1,7 @@
 ---
 title: Illuminate
 type: Aid
-school: [Array, Illusion]
+artistry: [Array, Illusion]
 duration: Concentration
 range: 10 meters
 aoe: Choose a point within range

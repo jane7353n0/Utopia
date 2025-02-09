@@ -1,7 +1,7 @@
 ---
 title: Cure Minimus
 type: Aid
-school: [Alteration]
+artistry: [Alteration]
 duration: Concentration 
 range: Touch
 aoe: Target creature

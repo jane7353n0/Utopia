@@ -1,7 +1,7 @@
 ---
 title: Silence
 type: Debilitation
-school: [Array, Enchantment, Alteration]
+artistry: [Array, Enchantment, Alteration]
 duration: 1 minute
 range: 10 meters
 aoe: Target creature

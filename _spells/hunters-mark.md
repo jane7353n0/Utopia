@@ -1,7 +1,7 @@
 ---
 title: Hunter's Mark
 type: Aid
-school: [Array, Enchantment, Divination]
+artistry: [Array, Enchantment, Divination]
 duration: 1 minute of Focus 
 range: 20 meters 
 aoe: Target creature
