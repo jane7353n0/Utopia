@@ -1,0 +1,8 @@
+
+{% assign spells = site.spells  | where: "type", include.category %}
+{% for spell in spells %}
+<div class="card mb-3">
+    <h5 class="card-header">{{spell.title}}</h5>
+    {% include card.spell.html type=spell.type duration=spell.duration range=spell.range target=spell.target artistry=spell.artistry cost=spell.cost aoe=spell.aoe content=spell.content%}
+</div>
+{% endfor %}

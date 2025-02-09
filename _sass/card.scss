@@ -1,0 +1,57 @@
+@import "bootstrap";
+
+.card-body-list {
+    @extend .list-group;
+    @extend .list-group-flush;
+}
+
+.card-body-list > li {
+    @extend .list-group-item;
+}
+
+.card-meta-grid {
+    @include make-row();
+
+    > .item-sm {
+        @include make-col-ready();
+        @include make-col(6);
+        
+        @include media-breakpoint-up(sm) {
+            @include make-col(4);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+        }
+    }
+    > .item-md {
+        @include make-col-ready();
+        @include make-col(6);
+        
+        @include media-breakpoint-up(sm) {
+            @include make-col(8);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+        }
+    }
+    > .item-lg {
+        @include make-col-ready();
+        @include make-col(12);
+        
+        @include media-breakpoint-up(sm) {
+            @include make-col(8);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+        }
+    }
+
+    > div > div {
+        @extend .p-1;
+    }
+    
+    .meta-label {
+        @extend .fw-semibold;
+        @extend small;
+    }
+}

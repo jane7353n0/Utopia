@@ -1,6 +1,5 @@
 ---
 title: Automaton
-subspezies: []
 base_stats:
  - constitution: 7
  - endurance: 4
@@ -9,11 +8,11 @@ defense_rating:
  - block: 2
  - dodge: 2
 gifted:
- - trait: select
+ - type: select
    amount: 2
 languages:
- - language: select
-   type: any
+ - tpye: select
+   language_type: any
    amount: 1
 special_traits:
  - title: Automatons Constitution

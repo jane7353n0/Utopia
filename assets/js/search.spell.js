@@ -24,7 +24,7 @@ function getQuery() {
     }
 }
 
-function performSearch() {
+window.onload = function performSearch() {
     fetch("/api/spells.json")
     .then(response => {
         if (!response.ok) {
@@ -102,19 +102,7 @@ function displayResults(results) {
         </button></div>
         <div id="${result.slug}" class="accordion-collapse collapse" data-bs-parent="#results">
             <div class="accordion-body">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="row">
-                            ${displayMeta("Category", result.type, 1)}
-                            ${displayMeta("Artistry", result.artistry,2)}
-                            ${displayMeta("Stamina", result.cost, 1)}
-                            ${displayMeta("Duration", result.duration, 1)}
-                            ${displayMeta("Range", result.range, 1)}
-                            ${displayMeta("Area of Effect", result.aoe, 3)}
-                        </div>
-                    </li>
-                    <li class="list-group-item">${result.content}</li>
-                </ul>
+                ${result.card}
             </div>
         </div>`;
         resultsElement.appendChild(listItem);

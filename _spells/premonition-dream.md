@@ -4,6 +4,7 @@ type: Ascertainment
 artistry: [Enchantment, Divination]
 duration: 1 hour
 range: Touch
+target: Creature
 aoe: Self
 cost: 28
 ---

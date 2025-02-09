@@ -14,6 +14,4 @@ group :jekyll_plugins do
 
 # ohter addons
 gem "font-awesome-sass", "~> 6.7"
-
-
 gem "jekyll-toc", "~> 0.19.0"

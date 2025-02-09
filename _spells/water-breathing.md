@@ -4,6 +4,7 @@ type: Aid
 artistry: [Enchantment, Alteration]
 duration: 1 hour of Focus
 range: Touch
+target: Creature
 aoe: Self
 cost: 15
 ---

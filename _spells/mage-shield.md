@@ -4,6 +4,7 @@ type: Aid
 artistry: [Evocation, Enchantment]
 duration: 1 minute of Focus once triggered 
 range: Touch
+target: Creature
 aoe: Self
 cost: 11
 ---

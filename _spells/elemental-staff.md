@@ -4,6 +4,7 @@ type: Combat
 artistry: [Evocation, Enchantment]
 duration: 1 minute
 range: Touch 
+target: Creature
 aoe: Self
 cost: 18
 ---

@@ -4,7 +4,8 @@ type: Debilitation
 artistry: [Illusion, Divination]
 duration: Concentration
 range: Touch
-aoe: Target creature
+target: Creature
+aoe: Target
 cost: 25
 ---
 You burrow yourself into the mind of a creature, divulging its worst fear and looming it over their

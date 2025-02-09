@@ -4,6 +4,7 @@ type: Ascertainment
 artistry: [Divination]
 duration: Concentration
 range: Touch
+target: Creature
 aoe: Self
 cost: 10
 ---

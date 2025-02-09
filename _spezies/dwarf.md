@@ -1,19 +1,22 @@
 ---
 title: Dwarf
-subspezies: [ Copper Dwarf, Iron Dwarf]
 base_stats:
- - constitution: 4
- - endurance: 6
- - effervescence: 3
+- constitution: 4
+- endurance: 6
+- effervescence: 3
 defense_rating:
- - block: 3
- - dodge: 1
+- block: 3
+- dodge: 1
 gifted:
- - trait: Memory
- - trait: Resolve
+- type: subtrait
+  subtrait: Memory
+- type: subtrait
+  subtrait: Resolve
 languages:
- - language: Utopian
- - language: Dwarvish
+- type: language
+  language: Utopian
+- type: language
+  language: Dwarvish
 ---
 The most immutable of the beginning humanoids, dwarves became quickly capable of magic due to their natural resistance to mana. Beginning with the arcane arts, dwarves adapted habits of entire civilizations mastering one profession, becoming the most capable engines of that industry. Over centuries of work and determination, this flourished into a mental, physical, and social stubbornness that was unshakable. This unwavering force is so strong that, on the rare occasion that a group does adapt in new ways, a new biological subspecies may be formed, such as how the copper dwarves did.
 

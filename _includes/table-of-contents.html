@@ -1,0 +1,11 @@
+<div class="toc">
+    <h5 class="toc-header">
+        Table of Contents
+    </h5>{% assign chapter = site.chapter | where: include.type , include.value | sort: include.sort %}
+    <div class="toc-body">
+        <ul class="toc-section-top">{% for item in chapter %}
+        <li><a href="{{item.url}}">{{item.title}}</a></li>
+        {% assign url = item.url | append: "#" %}{{ item.content | toc_only | replace: "#", url}}
+        {% endfor %}</ul>
+    </div>
+</div>

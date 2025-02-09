@@ -1,27 +1,27 @@
-const spellSchools = ["evocation","array","wake","enchantment","necromancy","divination","illusion","alteration",];
+const spellArtistrys = ["evocation","array","wake","enchantment","necromancy","divination","illusion","alteration",];
 const types = ["combat","aid","utility","debilitation","ascertainment","animation",];
 
 function getQuery() {
     const params = new URLSearchParams(new URL(window.location.href).search);
     let query = params.get('query')??"";
-    let schools = spellSchools.filter(school => params.has(school.toLowerCase()));
+    let artistrys = spellArtistrys.filter(artistry => params.has(artistry.toLowerCase()));
     let types_selected = types.filter(type => params.has(type.toLowerCase()));
 
     // Fill Search Form with query values
     searchbox = document.getElementById('searchBox');
     searchbox.value = query;
-    schools.forEach(school => {document.getElementById(`school_${school}`).checked = params.has(school.toLowerCase())});
+    artistrys.forEach(artistry => {document.getElementById(`artistry_${artistry}`).checked = params.has(artistry.toLowerCase())});
     types_selected.forEach(type => {document.getElementById(`type_${type}`).checked = params.has(type.toLowerCase())});
     return {
         "query": query,
         "filter": {
             "type" : types_selected,
-            "school": schools
+            "artistry": artistrys
         }
     }
 }
 
-function performSearch() {
+window.onload = function performSearch() {
     fetch("/api/spells.json")
     .then(response => {
         if (!response.ok) {
@@ -47,7 +47,7 @@ function search(document, query) {
     } 
     // Filter Spells
     results = (query.filter.type.length > 0 )?filterType(query.filter.type,results):results;
-    results = (query.filter.school.length > 0 )?filterSchool(query.filter.school,results):results;
+    results = (query.filter.artistry.length > 0 )?filterArtistry(query.filter.artistry,results):results;
 
     if (results.length > 0){
         displayResults(results);
@@ -56,9 +56,9 @@ function search(document, query) {
     }
 }
 
-function filterSchool(query, result) {
+function filterArtistry(query, result) {
     return result.filter(doc => 
-        doc.school.toLowerCase().split(", ").map(school=>{ return query.includes(school); }).includes(false) ? false : true
+        doc.artistry.toLowerCase().split(", ").map(artistry=>{ return query.includes(artistry); }).includes(false) ? false : true
         
     );
 }
@@ -89,7 +89,7 @@ function displayResults(results) {
             <div class="row w-100">
                 <div class="col-5">
                     <h5 class="card-title"><a class="text-dark text-decoration-none" href="${result.url}">${result.title}</a></h5>
-                    <h6 class="card-subtitle text-body-secondary"><small>${result.type} | ${result.school}</small></h6>
+                    <h6 class="card-subtitle text-body-secondary"><small>${result.type} | ${result.artistry}</small></h6>
                 </div>
                 <div class="col-1 fw-semibold align-content-center">${result.cost}</div>
                 <div class="col-2 fw-semibold align-content-center">${result.duration}</div>
@@ -99,19 +99,7 @@ function displayResults(results) {
         </button></div>
         <div id="${result.slug}" class="accordion-collapse collapse" data-bs-parent="#results">
             <div class="accordion-body">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="row">
-                            ${displayMeta("Category", result.type, 1)}
-                            ${displayMeta("Artistry", result.school,2)}
-                            ${displayMeta("Stamina", result.cost, 1)}
-                            ${displayMeta("Duration", result.duration, 1)}
-                            ${displayMeta("Range", result.range, 1)}
-                            ${displayMeta("Area of Effect", result.aoe, 3)}
-                        </div>
-                    </li>
-                    <li class="list-group-item">${result.content}</li>
-                </ul>
+                ${result.card}
             </div>
         </div>`;
         resultsElement.appendChild(listItem);

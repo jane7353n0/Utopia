@@ -1,6 +1,5 @@
 ---
 title: Human
-subspezies: []
 base_stats:
  - constitution: 4
  - endurance: 5
@@ -9,11 +8,11 @@ defense_rating:
  - block: 2
  - dodge: 2
 gifted:
- - trait: select
+ - type: select
    amount: 2
 languages:
- - language: select
-   type: simple
+ - type: select
+   language_type: simple
    amount: 2
 ---
 Humans are rare in comparison to most other humanoid species. With highly adaptable genes and easily mutated biology, they’ve become the butt-end of transmutational experiments and, in many historical cases, enslavement. Due to the mass hybridization, the number of pure humans have quickly dwindled. Now, they are held with high respect due to their scarcity and legacy.

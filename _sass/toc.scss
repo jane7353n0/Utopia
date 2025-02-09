@@ -1,0 +1,55 @@
+@import "bootstrap";
+
+@mixin toc-sections {
+  @extend .list-unstyled;
+  @extend .ms-3;
+}
+
+.toc {
+  @extend .card;
+}
+
+.toc-header {
+  @extend .card-header;
+}
+
+.toc-section {
+  @include toc-sections;
+}
+
+.toc-section-sub {
+  @include toc-sections;
+  @extend .fst-italic;
+  @extend .fw-lighter;
+}
+
+.toc-section-top {
+  @include toc-sections;
+}
+
+.toc-section-top > li > a {
+  @include strong;
+}
+
+.toc-entry a , .toc-section-top a {
+  @extend .text-decoration-none;
+}
+
+.toc-body {
+  @extend .card-body;
+  column-count: 1;
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .toc-body {
+    column-count: 2;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  .toc-body {
+    column-count: 3;
+  }
+}

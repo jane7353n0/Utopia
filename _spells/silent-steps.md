@@ -4,6 +4,7 @@ type: Aid
 artistry: [Enchantment]
 duration: Concentration
 range: Touch
+target: Creature
 aoe: Self
 cost: 8
 ---

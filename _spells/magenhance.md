@@ -4,6 +4,7 @@ type: Aid
 artistry: [Enchantment, Alteration]
 duration: 1 minute 
 range: Touch 
+target: Creature
 aoe: Self
 cost: 28
 ---

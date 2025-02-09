@@ -1,12 +1,7 @@
-<!doctype html>
-<html>
-  <head>
-    {% include meta.html %}
-    
-    </head>
-  <body onload="performSearch()">
-    {% include navigation.html %}
-    <div class="container d-flex flex-column gap-4">
+---
+layout: default
+---
+<div class="container d-flex flex-column gap-4" onload="performSearch()">
       <form class="container d-flex flex-column gap-3">
         <div class=" d-flex justify-content-between gap-2">
           <input type="text" class="form-control" id="searchBox" name="query" value="" placeholder="Search...">
@@ -51,5 +46,3 @@
       </main>
     </div>
     <script src="/assets/js/search.spell.js"></script>
-  </body>
-</html>

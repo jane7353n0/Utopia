@@ -1,16 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <title>Spells</title> 
-
-    
-    </head>
-  <body onload="performSearch()">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/assets/css/styles.css">
+      <script src="/assets/js/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+      <title>Spells | spells | </title> 
+  </head>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Play-Utopia</a>
@@ -107,7 +105,7 @@
   </div>
 </nav>
 
-    <div class="container d-flex flex-column gap-4">
+    <div class="container d-flex flex-column gap-4" onload="performSearch()">
       <form class="container d-flex flex-column gap-3">
         <div class=" d-flex justify-content-between gap-2">
           <input type="text" class="form-control" id="searchBox" name="query" value="" placeholder="Search...">
@@ -120,57 +118,57 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-3 px-4">
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="alteration" value=1 id="school_alteration">
-                <label class="form-check-label" for="school_alteration">
+                <input class="form-check-input" type="checkbox" name="alteration" value=1 id="artistry_alteration">
+                <label class="form-check-label" for="artistry_alteration">
                   Alteration
                 </label>
               </div>
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="array" value=1 id="school_array">
-                <label class="form-check-label" for="school_array">
+                <input class="form-check-input" type="checkbox" name="array" value=1 id="artistry_array">
+                <label class="form-check-label" for="artistry_array">
                   Array
                 </label>
               </div>
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="divination" value=1 id="school_divination">
-                <label class="form-check-label" for="school_divination">
+                <input class="form-check-input" type="checkbox" name="divination" value=1 id="artistry_divination">
+                <label class="form-check-label" for="artistry_divination">
                   Divination
                 </label>
               </div>
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="enchantment" value=1 id="school_enchantment">
-                <label class="form-check-label" for="school_enchantment">
+                <input class="form-check-input" type="checkbox" name="enchantment" value=1 id="artistry_enchantment">
+                <label class="form-check-label" for="artistry_enchantment">
                   Enchantment
                 </label>
               </div>
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="evocation" value=1 id="school_evocation">
-                <label class="form-check-label" for="school_evocation">
+                <input class="form-check-input" type="checkbox" name="evocation" value=1 id="artistry_evocation">
+                <label class="form-check-label" for="artistry_evocation">
                   Evocation
                 </label>
               </div>
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="illusion" value=1 id="school_illusion">
-                <label class="form-check-label" for="school_illusion">
+                <input class="form-check-input" type="checkbox" name="illusion" value=1 id="artistry_illusion">
+                <label class="form-check-label" for="artistry_illusion">
                   Illusion
                 </label>
               </div>
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="necromancy" value=1 id="school_necromancy">
-                <label class="form-check-label" for="school_necromancy">
+                <input class="form-check-input" type="checkbox" name="necromancy" value=1 id="artistry_necromancy">
+                <label class="form-check-label" for="artistry_necromancy">
                   Necromancy
                 </label>
               </div>
               
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="wake" value=1 id="school_wake">
-                <label class="form-check-label" for="school_wake">
+                <input class="form-check-input" type="checkbox" name="wake" value=1 id="artistry_wake">
+                <label class="form-check-label" for="artistry_wake">
                   Wake
                 </label>
               </div>
@@ -237,5 +235,6 @@
       </main>
     </div>
     <script src="/assets/js/search.spell.js"></script>
+
   </body>
 </html>
