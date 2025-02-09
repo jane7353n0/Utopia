@@ -17,11 +17,11 @@
           <fieldset class="col">
             <legend class="form-label fs-5">Artistry</legend>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-3 px-4">
-              {% assign schools = site.data.spells.school | sort:"name" %}{% for school in schools %}
+              {% assign artistrys = site.data.meta.spells.artistry | sort:"name" %}{% for artistry in artistrys %}
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="{{ school.name | downcase }}" value=1 id="school_{{ school.name | downcase }}">
-                <label class="form-check-label" for="school_{{ school.name | downcase }}">
-                  {{ school.name }}
+                <input class="form-check-input" type="checkbox" name="{{ artistry.name | downcase }}" value=1 id="artistry_{{ artistry.name | downcase }}">
+                <label class="form-check-label" for="artistry_{{ artistry.name | downcase }}">
+                  {{ artistry.name }}
                 </label>
               </div>
               {% endfor %}
@@ -30,7 +30,7 @@
           <fieldset class="col">
             <legend class="form-label fs-5">Type</legend>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-2 px-4">
-              {% assign types = site.data.spells.type | sort:"name" %}{% for type in types %}
+              {% assign types = site.data.meta.spells.type | sort:"name" %}{% for type in types %}
               <div class="form-check col">
                 <input class="form-check-input" type="checkbox" name="{{ type.name | downcase }}" value=1 id="type_{{ type.name | downcase }}">
                 <label class="form-check-label" for="type_{{ type.name | downcase }}">
