@@ -1,11 +1,11 @@
 // Docs on request and context https://docs.netlify.com/functions/build/#code-your-function-2
-import { MongoClient } from "mongodb";
+/*import { MongoClient } from "mongodb";
 
 const mongoClient = new MongoClient(process.env.MONGODB_URI);
 const clientPromise = mongoClient.connect();
 
 const db = "Rules";
-const col = "Traits";
+const col = "Traits";*/
 
 const handler = async (event) => {
   try {
