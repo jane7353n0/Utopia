@@ -1,5 +1,5 @@
 // Docs on request and context https://docs.netlify.com/functions/build/#code-your-function-2
-import { MongoClient } from "./node_modules/mongodb";
+import { MongoClient } from "mongodb";
 
 const mongoClient = new MongoClient(process.env.MONGODB_URI);
 const clientPromise = mongoClient.connect();
