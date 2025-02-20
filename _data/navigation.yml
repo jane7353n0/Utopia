@@ -1,7 +1,4 @@
 top_menu:
-- name: Home
-  type: Link
-  link: /
 - name: Collections
   type: Dropdown
   items: 
@@ -23,6 +20,49 @@ top_menu:
   - name: Spells (WiP)
     type: Link
     link: /spells
+  - name: Items (Coming soon)
+    type: Link
+    link: "#"
+  - name: Spezies (Coming soon)
+    type: Link
+    link: "#"
+  - name: Talent (Coming soon)
+    type: Link
+    link: "#"
+  - name: Spezialized Talent (Coming soon)
+    type: Link
+    link: "#"
+footer-menu:
+- name: Support
+  type: link-list
+  links:
+  - name: Support Forum
+    link: "#"
+    active: false
+  - name: Support me with coffee
+    link: "#"
+    active: false
+  - name: Cookie Settings
+    link: "#"
+    active: false
 - name: About
-  type: Link
-  link: /about.html
+  type: link-list
+  links:
+  - name: Contact us
+    link: "#"
+    active: false
+  - name: About us
+    link: "/about"
+    active: false
+  - name: Myramyth
+    link: "https://www.myramyth.com/"
+    active: true
+- name: Administration
+  type: link-list
+  links:
+  - name: Decap CMS
+    link: /admin
+    active: true
+  - name: GitHub
+    link: "https://www.github.com/"
+    active: true

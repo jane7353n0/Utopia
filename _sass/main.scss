@@ -1,9 +1,10 @@
 @import "toc";
 @import "card";
+@import "navigation";
 
 .content {
   @include make-container();
-  max-width: map-get($container-max-widths, "lg");
+  max-width: map-get($container-max-widths, "xl");
 
   > h1 {
     @extend .mb-4;

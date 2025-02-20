@@ -1,0 +1,1 @@
+{% if include.type == "stamina" %}{% include meta.stamina.html values=include.item.stamina %}{% elsif include.type == "duration" %}{% include meta.duration.html values=include.item.duration %}{% elsif include.type == "range" %}{% include meta.range.html values=include.item.range %}{% elsif include.type == "aoe" %}{% include meta.aoe.html values=include.item.aoe %}{% endif %}

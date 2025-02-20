@@ -79,7 +79,7 @@ The most common forms of refinement components are precious metals and alchemica
 
 ## CRAFTING REFINEMENT
 
-## COMPONENTS
+### COMPONENTS
 
 Refinement components are created by engineering material components artificially. Rather than a metal or a substrait, these would become mechanisms in line with gear systems and nanotechnology, depending on the rarity.
 

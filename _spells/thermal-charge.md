@@ -1,11 +1,19 @@
 ---
 title: Thermal Charge
-type: Combat
+category: Combat
 artistry: [Evocation]
-duration: Immediate
-range: Touch
-target: Weapon
-aoe: Target that isn’t currently imbued
-cost: 3X
+duration:
+  type: Immediate
+  text: Immediate
+range:
+  type: Touch
+  text: Touch
+aoe:
+  target: Weapon
+  area: 
+  text: Target weapon that isn’t currently imbued
+stamina:
+  flex: 3
+  text: 3X
 ---
 Choose between **Heat or Chill**. You imbue a weapon with thermal power, surrounding it in a faint glow. A weapon imbued this way deals an additional Xd8 damage of the chosen type on its next attack.

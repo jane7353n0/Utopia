@@ -1,48 +1,82 @@
 ---
-layout: default
+layout: content
 ---
-<div class="container d-flex flex-column gap-4" onload="performSearch()">
-      <form class="container d-flex flex-column gap-3">
-        <div class=" d-flex justify-content-between gap-2">
-          <input type="text" class="form-control" id="searchBox" name="query" value="" placeholder="Search...">
-          <button type="submit" class="btn btn-primary">Search</button>
-          <button type="reset" class="btn btn-outline-danger">Reset</button>
-        </div>
-        <div class="row row-cols-1 row-cols-lg-2">
-          <fieldset class="col">
-            <legend class="form-label fs-5">Artistry</legend>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-3 px-4">
-              {% assign artistrys = site.data.meta.spells.artistry | sort:"name" %}{% for artistry in artistrys %}
+<div class="search-form d-flex gap-3">
+  <div class="input-group">
+    <input type="text" class="form-control" id="searchBox" placeholder="Search..." oninput="performSearch()">
+    <button type="button" class="btn btn-outline-danger" aria-label="Clear" onclick="clearSearchInput()">X</button>
+  </div>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter" aria-controls="filter">
+    Filter
+  </button>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="filter" aria-labelledby="filterLabel">{% assign collection = page.collection %}
+  <div class="offcanvas-header">{% assign filter_data = site.data.meta[page.collection] %}
+    <h5 class="offcanvas-title" id="filterLabel">Filter</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">{% assign filter = filter_data["filter"] %}
+    <script>
+      let filter = {};
+    </script>
+    <div class="accordion" id="filterAccordion">{% for item in filter %}{% assign filter_item = item.name %}
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ filter_item | capitalize }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ filter_item | capitalize }}">
+            {{ filter_item | capitalize }}
+          </button>
+        </h2>
+        <div id="collapse{{ filter_item | capitalize }}" class="accordion-collapse collapse{% if forloop.index == 1 %} show{% endif %}" data-bs-parent="#filterAccordion">
+          <div class="accordion-body">
+            <div class="row row-cols-1 row-cols-sm-2 px-4">{% assign categories = filter_data[filter_item] | sort:"name" | map:"name" %}
+              <script>
+                filter["{{ filter_item }}"] = {"values" : ["{{ categories | join: '", "' }}"], "type": "{{item.type}}"};
+              </script>
+              {% for category in categories %}
               <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="{{ artistry.name | downcase }}" value=1 id="artistry_{{ artistry.name | downcase }}">
-                <label class="form-check-label" for="artistry_{{ artistry.name | downcase }}">
-                  {{ artistry.name }}
+                <input class="form-check-input" type="checkbox" name="{{ category | downcase }}" value=1 id="{{ filter_item }}_{{ category | downcase }}">
+                <label class="form-check-label" for="{{ filter_item }}_{{ category | downcase }}">
+                  {{ category }}
                 </label>
               </div>
               {% endfor %}
             </div>
-          </fieldset>
-          <fieldset class="col">
-            <legend class="form-label fs-5">Type</legend>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-2 px-4">
-              {% assign types = site.data.meta.spells.type | sort:"name" %}{% for type in types %}
-              <div class="form-check col">
-                <input class="form-check-input" type="checkbox" name="{{ type.name | downcase }}" value=1 id="type_{{ type.name | downcase }}">
-                <label class="form-check-label" for="type_{{ type.name | downcase }}">
-                  {{ type.name }}
-                </label>
-              </div>
-              {% endfor %}
-            </div>
-          </fieldset>
+          </div>
         </div>
-      </form>
-      <!--Spells-->
-      <main>
-        <div id="navigations"></div>
-        <div id="results" class="d-flex flex-column">
-          {{ content }}
-        </div>
-      </main>
+      </div>{% endfor %}
     </div>
-    <script src="/assets/js/search.spell.js"></script>
+  </div>
+</div>
+        
+<!--Spells-->
+<main class="mt-4" id="results">
+  <div id="results">
+    <div id="navigations" class="card-search-nav">
+      <div>Name</div>
+      <div>{% for col in page.columns %}<div>{{ col.name }}</div>{% endfor %}</div>
+    </div>
+    <div class="accordion" id="resultsAccordion">
+    {% for item in site[page.collection] %}
+      <div class="accordion-item" id="{{item.slug}}">
+        <h2 class="accordion-header">
+          <button class="card-search-meta accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ item.title | capitalize | url_encode }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ item.title | capitalize | url_encode }}">
+              <div><div>{{item.title}}</div><div>{% include meta.subtitle.html type=page.collection item=item %}</div></div>
+              <div>{% for col in page.columns %}<div>{% include meta.cols.html type=col.field item=item %}</div>{% endfor %}</div>
+          </button>
+        </h2>
+        <div id="collapse{{ item.title | capitalize | url_encode }}" class="accordion-collapse collapse{% if forloop.first %} show{% endif %}" data-bs-parent="#resultsAccordion">
+          <div class="accordion-body">{% include card.spell.html spell=item %}</div>
+        </div>
+      </div>
+    {% endfor %}
+    
+    {{ content }}
+    </div>
+  </div>
+  <div class="w-100 d-flex flex-column align-items-center pt-4 mt-4" id="no-results">
+    <h1>No Results found!</h1>
+  </div>
+</main>
+
+<script>const documents = [{% for item in site[page.collection] %}{% include api.json type=page.collection item=item %}{% unless forloop.last %}, {% endunless %}{% endfor %}];</script>
+<script src="/assets/js/search.spell.js"></script>

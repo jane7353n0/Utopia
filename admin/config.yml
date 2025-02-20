@@ -136,7 +136,7 @@ collections:
         fields:
         - { label: Title, name: name, widget: string }
         - { label: Description, name: content, widget: markdown, required: false }
-      - name: type
+      - name: category
         label: Spell Category
         widget: list
         fields:
@@ -146,7 +146,7 @@ collections:
       label: Items
       widget: object
       fields:
-      - name: type
+      - name: category
         label: Item Category
         widget: list
         fields:

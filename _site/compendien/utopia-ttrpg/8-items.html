@@ -9,104 +9,72 @@
   </head>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Play-Utopia</a>
+    <nav class="top-navbar navbar navbar-expand-lg">
+  <div>
+    <a class="navbar-brand" href="#">
+      <img class="rounded-circle" src="/assets/img/Utopia-Logo.png" alt="Logo" height="54px"> Play-Utopia</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        
-        <li class="nav-item"></li>
-          <a href="/" class="nav-link active" aria-current="page" >
-            Home
-          </a>
-        </li>
-        
-        
-        
+    <div class="navbar-collapse  collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Collections
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
           <ul class="dropdown-menu">
-            
-            
             <li><a class="dropdown-item" href="#">Campaigns (Coming soon)</a></li>
-            <!--<li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-            
-            
-            
             <li><a class="dropdown-item" href="#">Characters (Coming soon)</a></li>
-            <!--<li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-            
-            
           </ul>
         </li>
-        
-        
-        
+      
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Compendium
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Compendium</a>
           <ul class="dropdown-menu">
-            
-            
             <li><a class="dropdown-item" href="/compendien/utopia-ttrpg">Utopia TTRPG (WiP)</a></li>
-            <!--<li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-            
-            
           </ul>
         </li>
-        
-        
-        
+      
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Rules
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Rules</a>
           <ul class="dropdown-menu">
-            
-            
             <li><a class="dropdown-item" href="/spells">Spells (WiP)</a></li>
-            <!--<li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-            
-            
+            <li><a class="dropdown-item" href="#">Items (Coming soon)</a></li>
+            <li><a class="dropdown-item" href="#">Spezies (Coming soon)</a></li>
+            <li><a class="dropdown-item" href="#">Talent (Coming soon)</a></li>
+            <li><a class="dropdown-item" href="#">Spezialized Talent (Coming soon)</a></li>
           </ul>
         </li>
-        
-        
-        
-        <li class="nav-item"></li>
-          <a href="/about.html" class="nav-link active" aria-current="page" >
-            About
-          </a>
-        </li>
-        
-        
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <form class="nav-search" role="search">
+        <input type="search" placeholder="Search" aria-label="Search">
+        <button type="submit">Search</button>
       </form>
     </div>
-    <a class="btn btn-outline-secondary" href="/admin">CMS</a>
   </div>
 </nav>
 
     <div class="d-flex justify-content-center">
    <div class="content">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/compendien">Compendien</a></li>
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/compendien/utopia-ttrpg">Utopia TTRPG</a></li>
+        
+        <li class="breadcrumb-item active" aria-current="page">Items</li>
+        
+      
+    </ol>
+</nav>
+
     <h1>Items</h1>
     <div>
               <div class="row row-columns-auto">
@@ -120,8 +88,11 @@
 <li class="toc-entry toc-h2"><a href="#exceptional-success-and-failure">EXCEPTIONAL SUCCESS AND FAILURE</a></li>
 <li class="toc-entry toc-h2"><a href="#material-components">MATERIAL COMPONENTS</a></li>
 <li class="toc-entry toc-h2"><a href="#crafting-material-components">CRAFTING MATERIAL COMPONENTS</a></li>
-<li class="toc-entry toc-h2"><a href="#crafting-refinement">CRAFTING REFINEMENT</a></li>
-<li class="toc-entry toc-h2"><a href="#components-1">COMPONENTS</a></li>
+<li class="toc-entry toc-h2"><a href="#crafting-refinement">CRAFTING REFINEMENT</a>
+<ul class="toc-section-sub">
+<li class="toc-entry toc-h3"><a href="#components-1">COMPONENTS</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#crafting-power-components">CRAFTING POWER COMPONENTS</a></li>
 <li class="toc-entry toc-h2"><a href="#difficulty-ratings">DIFFICULTY RATINGS</a></li>
 <li class="toc-entry toc-h2"><a href="#drops-and-harvestables">DROPS AND HARVESTABLES</a></li>
@@ -203,7 +174,7 @@ Refinement components are small pieces that can make an item lighter, smaller, o
 
 <h2 id="crafting-refinement">CRAFTING REFINEMENT</h2>
 
-<h2 id="components-1">COMPONENTS</h2>
+<h3 id="components-1">COMPONENTS</h3>
 
 <p>Refinement components are created by engineering material components artificially. Rather than a metal or a substrait, these would become mechanisms in line with gear systems and nanotechnology, depending on the rarity.</p>
 
@@ -248,5 +219,40 @@ Throughout one’s travels, you’ll come across many different lifeforms. Some 
     </div> 
 </div>
 
+    <div class="container-fluid bg-body-tertiary py-4 mt-4">
+    <div class="content d-flex flex-column flex-sm-row justify-content-around gap-4">
+    <div>
+    <h6 class="text-secondary text-uppercase">Support</h6>
+    <div class="d-flex flex-column gap-3">
+        <div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Support Forum</a>
+        </div><div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Support me with coffee</a>
+        </div><div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Cookie Settings</a>
+        </div>
+    </div>
+</div><div>
+    <h6 class="text-secondary text-uppercase">About</h6>
+    <div class="d-flex flex-column gap-3">
+        <div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Contact us</a>
+        </div><div>
+            <a href="/about" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">About us</a>
+        </div><div>
+            <a href="https://www.myramyth.com/" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Myramyth</a>
+        </div>
+    </div>
+</div><div>
+    <h6 class="text-secondary text-uppercase">Administration</h6>
+    <div class="d-flex flex-column gap-3">
+        <div>
+            <a href="/admin" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Decap CMS</a>
+        </div><div>
+            <a href="https://www.github.com/" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover">GitHub</a>
+        </div>
+    </div>
+</div></div>
+</div>
   </body>
 </html>

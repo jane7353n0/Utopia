@@ -1,1 +1,43 @@
-<ul class='card-body-list'><li><div class='card-meta-grid'><div class='item-sm'><div><div class='meta-label'>Category</div><div class='meta-content'>{{include.type}}</div></div></div><div class='item-sm'><div><div class='meta-label'>Duration</div><div class='meta-content'>{{include.duration}}</div></div></div><div class='item-sm'><div><div class='meta-label'>Range</div><div class='meta-content'>{{include.range}}</div></div></div><div class='item-sm'><div><div class='meta-label'>Target</div><div class='meta-content'>{{include.target}}</div></div></div><div class='item-md'><div><div class='meta-label'>Artistry</div><div class='meta-content'>{{include.artistry | join: ', ' }}</div></div></div><div class='item-sm'><div><div class='meta-label'>Stamina</div><div class='meta-content'>{{include.cost}}</div></div></div><div class='item-lg'><div><div class='meta-label'>Area of Effect</div><div class='meta-content'>{{include.aoe}}</div></div></div></div></li><li>{{ include.content | strip_newlines }}</li></ul>
+<ul class='card-body-list'>
+    <li>
+        <div class='card-meta-grid'>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Category</div>
+                    <div class='meta-content'>{{include.spell.category}}</div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>{% assign flex = include.spell.stamina.flex | default: "" %}{% assign set = include.spell.stamina.set | default: "" %}
+                    <div class='meta-label'>Stamina</div>
+                    <div class='meta-content'>{{ flex }}{% if flex !="" %}X{% if set != "" %} + {% endif %}{% endif %}{{ set }}</div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Artistry</div>
+                    <div class='meta-content'>{{include.spell.artistry | join: ', ' }}</div>
+                </div>
+            </div>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Duration</div>
+                    <div class='meta-content'>{% unless include.spell.duration.type == "Duration" %}{{ include.spell.duration.type }}{% else %}{{ include.spell.duration.time.amount }} {{ include.spell.duration.time.unit }}{% if include.spell.duration.focus %} of Focus{% endif %}{% if include.spell.duration.trigger %} once triggered{% endif %}{% endunless %}</div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>
+                    <div class='meta-label'>Range</div>
+                    <div class='meta-content'>{% if include.spell.range.type =="Touch" %}{{ include.spell.range.type }}{% else %}{{ include.spell.range.range }} meters{% endif %}</div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Area of Effect</div>
+                    <div class='meta-content'>{{ include.spell.aoe.text }}</div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>{{ include.spell.content | strip_newlines }}</li>
+</ul>

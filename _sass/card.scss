@@ -16,8 +16,8 @@
         @include make-col-ready();
         @include make-col(6);
         
-        @include media-breakpoint-up(sm) {
-            @include make-col(4);
+        @include media-breakpoint-up(md) {
+            @include make-col(3);
         }
         @include media-breakpoint-up(lg) {
             @include make-col(3);
@@ -27,19 +27,20 @@
         @include make-col-ready();
         @include make-col(6);
         
-        @include media-breakpoint-up(sm) {
-            @include make-col(8);
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
         }
         @include media-breakpoint-up(lg) {
             @include make-col(3);
         }
     }
+
     > .item-lg {
         @include make-col-ready();
         @include make-col(12);
         
-        @include media-breakpoint-up(sm) {
-            @include make-col(8);
+        @include media-breakpoint-up(md) {
+            @include make-col(5);
         }
         @include media-breakpoint-up(lg) {
             @include make-col(6);
@@ -53,5 +54,61 @@
     .meta-label {
         @extend .fw-semibold;
         @extend small;
+    }
+}
+
+.card-search-meta, .card-search-nav {
+    display: flex;
+    width:100%;
+
+    > :first-child {
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            width: 40%;
+        }
+    }
+
+    >:nth-child(2) {
+        display: none;
+        
+        @include media-breakpoint-up(lg) {
+            width:60%;
+            @include make-row();
+
+            > div {
+                @include make-col();
+            }
+        }
+    }
+}
+
+.card-search-meta {
+
+    > :first-child {
+
+        display:flex;
+        flex-direction: column;
+        // Header title
+        > :first-child {
+            font-size: larger;
+            margin: 0;
+            font-weight: 500;
+        }
+        // Subheader
+        > :nth-child(2) {
+            font-size: small;
+            color: $secondary;
+        }
+    }
+}
+
+.card-search-nav {
+    
+    @include make-container();
+    > div {
+        font-weight: 500;
+        font-size: small;
+        color: $secondary;
+        @extend .text-uppercase;
     }
 }

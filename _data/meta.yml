@@ -81,7 +81,19 @@ actions:
   - name: Assist
     action_time: 1 TA
     stamina: 0
+
+conditions:
+  - name: Blinded
+    content: ...
+    url: /compendien/utopia-ttrpg/6-playing-the-game#blinded
+
 spells:
+  type: collection
+  filter:
+  - name: category
+    type: multiselect_inclusive
+  - name: artistry
+    type: multiselect_exclusive
   artistry:
   - name: Evocation
   - name: Array
@@ -91,7 +103,7 @@ spells:
   - name: Divination
   - name: Illusion
   - name: Alteration
-  type:
+  category:
   - name: Combat
   - name: Aid
   - name: Utility
@@ -99,17 +111,17 @@ spells:
   - name: Ascertainment
   - name: Animation
 items:
-  type:
+  category:
   - name: Weapon
     content: "**Weapons** naturally modify how many turn actions it’ll require for you to attack, as well as how much damage you deal for each attack. You can hold multiple weapons at once, though both will work at lower efficiency if you’re not trained properly."
-    subtype:
+    subcategory:
     - name: Slow Weapon
     - name: Moderate Weapon
     - name: Fast Weapon
     - name: Ammunitions
   - name: Armor
     content: "**Armor** will take up one of four slots you have available: your head slot, your chest slot, your hands slot, or your feet slot. The most basic form of armor will either raise your defenses or offer you additional Block Rating or Dodge Rating. Though, some armor pieces have other specialized benefits."
-    subtypes:
+    subcategory:
     - name: Head Armor
     - name: Chest Armor
     - name: Hand Armor
@@ -119,7 +131,7 @@ items:
     content: "**Consumables** generally include potions, edible substances, salves, injections, and plenty of other things that only work a number of times before the item is destroyed or rendered useless. Generally these come at lower costs due to their sparse use but also comprise one of the only forms of portable healing available."
   - name: Artifacts
     content: "**Artifacts** comprise just about every other item, including and not limited to back equipment, neck equipment, waist equipment, and rings. Some artifacts will take up one of those four slots, whereas others require a free hand to operate. These come with a plethora of unique features, including storing items, traversing terrain remotely, and offering passive buffs to the user."
-    subtypes:
+    subcategory:
     - name: Back Equipment
     - name: Neck Equipment
     - name: Waist Equipment

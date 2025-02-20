@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/assets/css/styles.css">
+      <script src="/assets/js/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+      <title>Spezies | spezies | </title> 
+  </head>
+  </head>
+  <body>
+    <nav class="top-navbar navbar navbar-expand-lg">
+  <div>
+    <a class="navbar-brand" href="#">
+      <img class="rounded-circle" src="/assets/img/Utopia-Logo.png" alt="Logo" height="54px"> Play-Utopia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse  collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Campaigns (Coming soon)</a></li>
+            <li><a class="dropdown-item" href="#">Characters (Coming soon)</a></li>
+          </ul>
+        </li>
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Compendium</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/compendien/utopia-ttrpg">Utopia TTRPG (WiP)</a></li>
+          </ul>
+        </li>
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Rules</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/spells">Spells (WiP)</a></li>
+            <li><a class="dropdown-item" href="#">Items (Coming soon)</a></li>
+            <li><a class="dropdown-item" href="#">Spezies (Coming soon)</a></li>
+            <li><a class="dropdown-item" href="#">Talent (Coming soon)</a></li>
+            <li><a class="dropdown-item" href="#">Spezialized Talent (Coming soon)</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="nav-search" role="search">
+        <input type="search" placeholder="Search" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="d-flex justify-content-center">
+   <div class="content">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        
+        <li class="breadcrumb-item active" aria-current="page">Spezies</li>
+        
+      
+    </ol>
+</nav>
+
+    <h1>Spezies</h1>
+    <div>
+        <div class="search-form d-flex gap-3">
+  <div class="input-group">
+    <input type="text" class="form-control" id="searchBox" placeholder="Search..." oninput="performSearch()">
+    <button type="button" class="btn btn-outline-danger" aria-label="Clear" onclick="clearSearchInput()">X</button>
+  </div>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter" aria-controls="filter">
+    Filter
+  </button>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="filter" aria-labelledby="filterLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="filterLabel">Filter</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <script>
+      let filter = {};
+    </script>
+    <div class="accordion" id="filterAccordion">
+    </div>
+  </div>
+</div>
+        
+<!--Spells-->
+<main class="mt-4" id="results">
+  <div id="results">
+    <div id="navigations" class="card-search-nav">
+      <div>Name</div>
+      <div></div>
+    </div>
+    <div class="accordion" id="resultsAccordion">
+    
+      <div class="accordion-item" id="automaton">
+        <h2 class="accordion-header">
+          <button class="card-search-meta accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAutomaton" aria-expanded="true" aria-controls="collapseAutomaton">
+              <div><div>Automaton</div><div></div></div>
+              <div></div>
+          </button>
+        </h2>
+        <div id="collapseAutomaton" class="accordion-collapse collapse show" data-bs-parent="#resultsAccordion">
+          <div class="accordion-body"><ul class='card-body-list'>
+    <li>
+        <div class='card-meta-grid'>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Category</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>
+                    <div class='meta-label'>Stamina</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Artistry</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Duration</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>
+                    <div class='meta-label'>Range</div>
+                    <div class='meta-content'> meters</div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Area of Effect</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li><p>Automaton is a blanket term, ranging from androids and robots to golems and homunculi. The use and creation of automatons exploded during the revela tions in both the arcane and the techno logical, though during separate instanc es. Even today, those that aren’t sentient are often owned and built for the higher classes, serving as a luxury item. This is a point of contention in some places, as many automatons have become complex enough to be sentient, even when born into servitude.</p><p>Automatons are extremely unique in comparison to any other playable spe cies. Their inability to naturally regain stamina forces them to rely on items to expend energy. This is balanced by the fact that they do not need biological essentials, such as food or air.</p><h2 id="location">Location</h2><p>Automatons are constructed and used as hired help all over the colonized universe. On some occasions, automa tons may be built with sentience simply for the sake of the creation of life.</p><h2 id="livespan-and-genetics">Livespan and Genetics</h2><p>Automatons have varying lifespans, based on how they were constructed and what the purpose of their creator(s) were. More often than not, automatons do not age.</p><h2 id="background">Background</h2><p>Automatons were first built by dwarves, specifically in the form of druidic golems. Since their initial creation, the use of golems spread throughout Pia for use as sentinels, tradesmen, and even companions.</p><p>Prior to and in the midst of the coloniza tion of Uto, golems within specific areas slowly transitioned towards androids. Similar in purpose, though with no arcane characteristics. Early android prototypes were primitive in comparison to common standards, but highly advanced for the time. Such inventions paved new grounds for modern robots.</p><p>On a modern scale, automatons roam freely in some cases, some capable of complex emotions and beliefs, going as far as being allowed citizenship in some societies including Uto. The android population on Uto battles the population of some other humanoids, as they are very common to be used for labor.</p></li>
+</ul></div>
+        </div>
+      </div>
+    
+      <div class="accordion-item" id="dwarf">
+        <h2 class="accordion-header">
+          <button class="card-search-meta accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDwarf" aria-expanded="false" aria-controls="collapseDwarf">
+              <div><div>Dwarf</div><div></div></div>
+              <div></div>
+          </button>
+        </h2>
+        <div id="collapseDwarf" class="accordion-collapse collapse" data-bs-parent="#resultsAccordion">
+          <div class="accordion-body"><ul class='card-body-list'>
+    <li>
+        <div class='card-meta-grid'>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Category</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>
+                    <div class='meta-label'>Stamina</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Artistry</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Duration</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>
+                    <div class='meta-label'>Range</div>
+                    <div class='meta-content'> meters</div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Area of Effect</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li><p>The most immutable of the beginning humanoids, dwarves became quickly capable of magic due to their natural resistance to mana. Beginning with the arcane arts, dwarves adapted habits of entire civilizations mastering one profession, becoming the most capable engines of that industry. Over centuries of work and determination, this flourished into a mental, physical, and social stubbornness that was unshakable. This unwavering force is so strong that, on the rare occasion that a group does adapt in new ways, a new biological subspecies may be formed, such as how the copper dwarves did.</p><p>Dwarves are mechanically simple to play but strong in specific fields of play, between item crafting and magic. They have stout stats, with their talent pool aiding predominately in defense. This pairs well with the offensive capability offered in their subspecies talent pools.</p><h2 id="location">Location</h2><p>Dwarves riddle the populations of Uto and Pia, found in many different diverse regions. They are well-adapted to many environments and thrive as such, though many live more content lives isolated. Many societies have adapted to welcome dwarves, given they are natural-born laborers and specialized tradesmen.</p><h2 id="lifespan-and-genetics">Lifespan and Genetics</h2><p>Dwarves are highly resistant to medicine and drug, their genes resistant to mutation. Many dwarves share similar, common features such as dark hair and brown eyes, as their recessive genes are rare to come by and often smothered by those that are dominant. They live on average to the age of 200, though upwards of 300 years with proper medicine.</p><p>Prior to the colonization of Uto, dwarves began to split into two groups, now called the iron dwarves and copper dwarves. Involved with drastic conditions, the copper dwarfs’ common biology was altered enough for them to be deemed a separate subspecies. Iron dwarves and copper dwarves cannot produce offspring with one another.</p><h2 id="background">Background</h2><p>Much like their genetic makeup, dwarves are extremely stubborn by nature. Many dive deep into the profession they find themselves in at youth and stay in that position until pardoned by death.</p><p>Dwarves share some ancestry with humans and more ancestry with elves. Though, after taking to the underground, their features, both physical and otherwise, changed drastically. The most ancient species of dwarves, crystal dwarves, were strong miners and exceptionally durable creatures. Although, as civilization began to sprout amongst Pia, crystal dwarves became hostile and cultish.</p><p>A firm pride that many dwarves hold is in their ancient generations constructing the foundations of spellcraft as it is used today. Even with eight total arcane arts used in the modern age, the primary four have not only stood the test of time but also served as a basis for more arcane arts to be constructed. Some dwarves hold this arcane nature deep in their blood, while others are just simply clever and bold with their magical signatures.</p><p>Even with pride in their ancestry, dwarves of differing subspecies clash socially. Their stubbornness and isolating tendencies can easily act as a catalyst for disagreement between the traditional souls and the innovative minds.</p><h2 id="playing-a-dwarf">Playing a Dwarf</h2><p>Dwarves are ultimately a rather basic species for learning more advanced mechanics in Utopia. <strong>Iron dwarves</strong> have many talents that make them more powerful spellcasters, while <strong>copper dwarves</strong> offer more efficiency when it comes to craft.</p><p>All dwarves share a relatively defensive nature, leaning towards a tank style. A majority of dwarven talents help to build defense stats while they innately have a higher block rating than average.</p><p>Regardless of the playstyle, it’s important to take into account that dwarves often have a large stamina pool to take from. Iron dwarves can easily benefit from this due to spells requiring copious amounts of stamina, though copper dwarves need a bit of cunning to make good use of this. Most commonly, this resource is easiest abused with combat maneuvers, such as those found on the Warfare core talent tree.</p><p>Other synergistic talents depend on subspecies. Iron dwarves will find the <strong>Magecraft core talent tree</strong> nearly essential, given talents from this tree are required in order to cast spells. On the flip side, copper dwarves may find the most use from the <strong>Innovation core talent tree</strong>, allowing them not only to craft more powerful and valuable items, but also allowing them to use their naturally gifted mental traits and subtraits in place of (or in addition to) what would normally be used.</p></li>
+</ul></div>
+        </div>
+      </div>
+    
+      <div class="accordion-item" id="human">
+        <h2 class="accordion-header">
+          <button class="card-search-meta accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHuman" aria-expanded="false" aria-controls="collapseHuman">
+              <div><div>Human</div><div></div></div>
+              <div></div>
+          </button>
+        </h2>
+        <div id="collapseHuman" class="accordion-collapse collapse" data-bs-parent="#resultsAccordion">
+          <div class="accordion-body"><ul class='card-body-list'>
+    <li>
+        <div class='card-meta-grid'>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Category</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>
+                    <div class='meta-label'>Stamina</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Artistry</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-md'>
+                <div>
+                    <div class='meta-label'>Duration</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+            <div class='item-sm'>
+                <div>
+                    <div class='meta-label'>Range</div>
+                    <div class='meta-content'> meters</div>
+                </div>
+            </div>
+            <div class='item-lg'>
+                <div>
+                    <div class='meta-label'>Area of Effect</div>
+                    <div class='meta-content'></div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li><p>Humans are rare in comparison to most other humanoid species. With highly adaptable genes and easily mutated biology, they’ve become the butt-end of transmutational experiments and, in many historical cases, enslavement. Due to the mass hybridization, the number of pure humans have quickly dwindled. Now, they are held with high respect due to their scarcity and legacy.</p><p>Humans are very fluid and versatile, with no single strong characteristic. Low difficulty play including basic abilities and the ability to adapt from other species.</p><h2 id="location">Location</h2><p>Humans can be found all over the colonized universe, albeit on rare occasions. Their extreme adaptability, both physically and genetically, made them targets for early arcane experimentation and subjugation.</p><p>Due to the dark history of the human population, their numbers have dwindled greatly. Their sparsity amongst Uto and Pia, and their ability to procreate with several other humanoid species, has forced their numbers to flatline.</p><h2 id="lifespan-and-genetics">Lifespan and Genetics</h2><p>Humans have highly malleable genetics in comparison to any other sentient humanoid, making them optimal targets for testing. These creatures live up to 100 years naturally, though upwards of 250 years with proper medicine and healing.</p><h2 id="background">Background</h2><p>Humans were one of the first humanoid Pian species, walking chronologically with the elves and the dwarves.</p><p>Once primitive innovation initially sparked, humans became a common target for experimentation and oppression. Humans were often not highly capable in any specific area, making them easy targets to dominate.</p><p>In time, many humans built numbers and revolted their captors, allowing their freedom in hiding. After human independence became the standard in more Pian societies than otherwise, many human-pure communities were created, generally housing mostly refugees. Though, many of these societies were turned impure by lingering arcane effects such as lycanthropy.</p><p>Currently, most humans have been granted liberty, both due to higher complexity social advancements, as well as the creation of artificial humanoids aiding in servitude. Although, some primitive Piansocieties still enslave and farm humans.</p></li>
+</ul></div>
+        </div>
+      </div>
+    
+    
+    
+
+    </div>
+  </div>
+  <div class="w-100 d-flex flex-column align-items-center pt-4 mt-4" id="no-results">
+    <h1>No Results found!</h1>
+  </div>
+</main>
+
+<script>const documents = [{"title":"Automaton","url":"/spezies/automaton","slug":"automaton","category":"","content": "<p>Automaton is a blanket term, ranging from androids and robots to golems and homunculi. The use and creation of automatons exploded during the revela tions in both the arcane and the techno logical, though during separate instanc es. Even today, those that aren’t sentient are often owned and built for the higher classes, serving as a luxury item. This is a point of contention in some places, as many automatons have become complex enough to be sentient, even when born into servitude.</p><p>Automatons are extremely unique in comparison to any other playable spe cies. Their inability to naturally regain stamina forces them to rely on items to expend energy. This is balanced by the fact that they do not need biological essentials, such as food or air.</p><h2 id=\"location\">Location</h2><p>Automatons are constructed and used as hired help all over the colonized universe. On some occasions, automa tons may be built with sentience simply for the sake of the creation of life.</p><h2 id=\"livespan-and-genetics\">Livespan and Genetics</h2><p>Automatons have varying lifespans, based on how they were constructed and what the purpose of their creator(s) were. More often than not, automatons do not age.</p><h2 id=\"background\">Background</h2><p>Automatons were first built by dwarves, specifically in the form of druidic golems. Since their initial creation, the use of golems spread throughout Pia for use as sentinels, tradesmen, and even companions.</p><p>Prior to and in the midst of the coloniza tion of Uto, golems within specific areas slowly transitioned towards androids. Similar in purpose, though with no arcane characteristics. Early android prototypes were primitive in comparison to common standards, but highly advanced for the time. Such inventions paved new grounds for modern robots.</p><p>On a modern scale, automatons roam freely in some cases, some capable of complex emotions and beliefs, going as far as being allowed citizenship in some societies including Uto. The android population on Uto battles the population of some other humanoids, as they are very common to be used for labor.</p>"}, {"title":"Dwarf","url":"/spezies/dwarf","slug":"dwarf","category":"","content": "<p>The most immutable of the beginning humanoids, dwarves became quickly capable of magic due to their natural resistance to mana. Beginning with the arcane arts, dwarves adapted habits of entire civilizations mastering one profession, becoming the most capable engines of that industry. Over centuries of work and determination, this flourished into a mental, physical, and social stubbornness that was unshakable. This unwavering force is so strong that, on the rare occasion that a group does adapt in new ways, a new biological subspecies may be formed, such as how the copper dwarves did.</p><p>Dwarves are mechanically simple to play but strong in specific fields of play, between item crafting and magic. They have stout stats, with their talent pool aiding predominately in defense. This pairs well with the offensive capability offered in their subspecies talent pools.</p><h2 id=\"location\">Location</h2><p>Dwarves riddle the populations of Uto and Pia, found in many different diverse regions. They are well-adapted to many environments and thrive as such, though many live more content lives isolated. Many societies have adapted to welcome dwarves, given they are natural-born laborers and specialized tradesmen.</p><h2 id=\"lifespan-and-genetics\">Lifespan and Genetics</h2><p>Dwarves are highly resistant to medicine and drug, their genes resistant to mutation. Many dwarves share similar, common features such as dark hair and brown eyes, as their recessive genes are rare to come by and often smothered by those that are dominant. They live on average to the age of 200, though upwards of 300 years with proper medicine.</p><p>Prior to the colonization of Uto, dwarves began to split into two groups, now called the iron dwarves and copper dwarves. Involved with drastic conditions, the copper dwarfs’ common biology was altered enough for them to be deemed a separate subspecies. Iron dwarves and copper dwarves cannot produce offspring with one another.</p><h2 id=\"background\">Background</h2><p>Much like their genetic makeup, dwarves are extremely stubborn by nature. Many dive deep into the profession they find themselves in at youth and stay in that position until pardoned by death.</p><p>Dwarves share some ancestry with humans and more ancestry with elves. Though, after taking to the underground, their features, both physical and otherwise, changed drastically. The most ancient species of dwarves, crystal dwarves, were strong miners and exceptionally durable creatures. Although, as civilization began to sprout amongst Pia, crystal dwarves became hostile and cultish.</p><p>A firm pride that many dwarves hold is in their ancient generations constructing the foundations of spellcraft as it is used today. Even with eight total arcane arts used in the modern age, the primary four have not only stood the test of time but also served as a basis for more arcane arts to be constructed. Some dwarves hold this arcane nature deep in their blood, while others are just simply clever and bold with their magical signatures.</p><p>Even with pride in their ancestry, dwarves of differing subspecies clash socially. Their stubbornness and isolating tendencies can easily act as a catalyst for disagreement between the traditional souls and the innovative minds.</p><h2 id=\"playing-a-dwarf\">Playing a Dwarf</h2><p>Dwarves are ultimately a rather basic species for learning more advanced mechanics in Utopia. <strong>Iron dwarves</strong> have many talents that make them more powerful spellcasters, while <strong>copper dwarves</strong> offer more efficiency when it comes to craft.</p><p>All dwarves share a relatively defensive nature, leaning towards a tank style. A majority of dwarven talents help to build defense stats while they innately have a higher block rating than average.</p><p>Regardless of the playstyle, it’s important to take into account that dwarves often have a large stamina pool to take from. Iron dwarves can easily benefit from this due to spells requiring copious amounts of stamina, though copper dwarves need a bit of cunning to make good use of this. Most commonly, this resource is easiest abused with combat maneuvers, such as those found on the Warfare core talent tree.</p><p>Other synergistic talents depend on subspecies. Iron dwarves will find the <strong>Magecraft core talent tree</strong> nearly essential, given talents from this tree are required in order to cast spells. On the flip side, copper dwarves may find the most use from the <strong>Innovation core talent tree</strong>, allowing them not only to craft more powerful and valuable items, but also allowing them to use their naturally gifted mental traits and subtraits in place of (or in addition to) what would normally be used.</p>"}, {"title":"Human","url":"/spezies/human","slug":"human","category":"","content": "<p>Humans are rare in comparison to most other humanoid species. With highly adaptable genes and easily mutated biology, they’ve become the butt-end of transmutational experiments and, in many historical cases, enslavement. Due to the mass hybridization, the number of pure humans have quickly dwindled. Now, they are held with high respect due to their scarcity and legacy.</p><p>Humans are very fluid and versatile, with no single strong characteristic. Low difficulty play including basic abilities and the ability to adapt from other species.</p><h2 id=\"location\">Location</h2><p>Humans can be found all over the colonized universe, albeit on rare occasions. Their extreme adaptability, both physically and genetically, made them targets for early arcane experimentation and subjugation.</p><p>Due to the dark history of the human population, their numbers have dwindled greatly. Their sparsity amongst Uto and Pia, and their ability to procreate with several other humanoid species, has forced their numbers to flatline.</p><h2 id=\"lifespan-and-genetics\">Lifespan and Genetics</h2><p>Humans have highly malleable genetics in comparison to any other sentient humanoid, making them optimal targets for testing. These creatures live up to 100 years naturally, though upwards of 250 years with proper medicine and healing.</p><h2 id=\"background\">Background</h2><p>Humans were one of the first humanoid Pian species, walking chronologically with the elves and the dwarves.</p><p>Once primitive innovation initially sparked, humans became a common target for experimentation and oppression. Humans were often not highly capable in any specific area, making them easy targets to dominate.</p><p>In time, many humans built numbers and revolted their captors, allowing their freedom in hiding. After human independence became the standard in more Pian societies than otherwise, many human-pure communities were created, generally housing mostly refugees. Though, many of these societies were turned impure by lingering arcane effects such as lycanthropy.</p><p>Currently, most humans have been granted liberty, both due to higher complexity social advancements, as well as the creation of artificial humanoids aiding in servitude. Although, some primitive Piansocieties still enslave and farm humans.</p>"}];</script>
+<script src="/assets/js/search.spell.js"></script>
+
+    </div>
+    </div> 
+</div>
+
+    <div class="container-fluid bg-body-tertiary py-4 mt-4">
+    <div class="content d-flex flex-column flex-sm-row justify-content-around gap-4">
+    <div>
+    <h6 class="text-secondary text-uppercase">Support</h6>
+    <div class="d-flex flex-column gap-3">
+        <div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Support Forum</a>
+        </div><div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Support me with coffee</a>
+        </div><div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Cookie Settings</a>
+        </div>
+    </div>
+</div><div>
+    <h6 class="text-secondary text-uppercase">About</h6>
+    <div class="d-flex flex-column gap-3">
+        <div>
+            <a href="#" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">Contact us</a>
+        </div><div>
+            <a href="/about" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover disabled" aria-disabled="true">About us</a>
+        </div><div>
+            <a href="https://www.myramyth.com/" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Myramyth</a>
+        </div>
+    </div>
+</div><div>
+    <h6 class="text-secondary text-uppercase">Administration</h6>
+    <div class="d-flex flex-column gap-3">
+        <div>
+            <a href="/admin" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Decap CMS</a>
+        </div><div>
+            <a href="https://www.github.com/" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover">GitHub</a>
+        </div>
+    </div>
+</div></div>
+</div>
+  </body>
+</html>

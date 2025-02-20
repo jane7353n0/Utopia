@@ -1,1 +1,1 @@
-**<a href='/{{include.type}}/{{ include.name | downcase }}'>{{include.name}}</a>**
+[{{include.display | default: include.name}}]({% if include.type == "Condition" %}{% assign item = site.data.meta.conditions | where: "name", include.name | first %}{{item.url}}{% else %}/{{include.type}}/{{ include.name | downcase | replace: " ", "-" }}{% endif %})

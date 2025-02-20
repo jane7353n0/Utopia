@@ -1,0 +1,12 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {% assign urls = page.url | split: "/" %}{% for url in urls %}
+        {% if forloop.index == forloop.length %}<li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>{% else %}
+        {% assign breadcrumb = urls | slice: 0, forloop.index | join: "/"%}{% assign title = site.pages | where: "url", breadcrumb | first %}
+        {% for collection in site.collections %}
+            {% assign doc = collection.docs | where: "url", breadcrumb | first %}{% assign title = doc | default: title %}
+        {% endfor %}<li class="breadcrumb-item"><a href="{{ breadcrumb  | default: '/' }}">{{ title.title | default: "Home" }}</a></li>{% endif %}
+        {% endfor %}
+      
+    </ol>
+</nav>

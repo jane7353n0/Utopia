@@ -1,0 +1,1 @@
+{% if include.values.type == "Duration" %}{{include.values.time.amount}} {{include.values.time.unit}}{% else %}{{ include.values.type }}{% endif %}{% if include.values.focus %} Ⓕ{% endif %}{% if include.values.trigger %} 🅃{% endif %}

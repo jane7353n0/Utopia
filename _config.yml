@@ -1,20 +1,27 @@
 collections:
   spells:
     output: true
+    permalink: /:collection/:name
+  items:
+    output: true
+    permalink: /:collection/:name
   chapter:
     output: true
     permalink: "/compendien/:path"
   compendien:
     output: true
+    permalink: /:collection/:name
   spezies:
     output: true
+    permalink: /:collection/:name
   subspezies:
     output: false
   
-
+permalink: /:categories/:year/:month/:day/:title
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
+      type: pages
     values:
       layout: "default"
   - scope:

@@ -10,6 +10,15 @@
   </head>
   <body>
     {% include navigation.html %}
+    <div id="test"></div>
+    <script>
+      (async () => {
+        let results = await fetch("/netlify/functions/get-spell").then(response => response.text());
+        const item = document.getElementById("test");
+        item.innerText = results;
+      })();
+    </script>
     {{ content }}
+    {% include footer.html %}
   </body>
 </html>

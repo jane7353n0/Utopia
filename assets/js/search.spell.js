@@ -1,10 +1,6 @@
----
-layout: none
----
-const spellArtistrys = [{% for artistry in site.data.meta.spells.artistry %}"{{artistry.name | downcase}}",{% endfor %}];
-const types = [{% for type in site.data.meta.spells.type %}"{{type.name | downcase}}",{% endfor %}];
 
 function getQuery() {
+    /*
     const params = new URLSearchParams(new URL(window.location.href).search);
     let query = params.get('query')??"";
     let artistrys = spellArtistrys.filter(artistry => params.has(artistry.toLowerCase()));
@@ -15,17 +11,26 @@ function getQuery() {
     searchbox.value = query;
     artistrys.forEach(artistry => {document.getElementById(`artistry_${artistry}`).checked = params.has(artistry.toLowerCase())});
     types_selected.forEach(type => {document.getElementById(`type_${type}`).checked = params.has(type.toLowerCase())});
+    */
+    console.log("Get query values:");
     return {
-        "query": query,
-        "filter": {
-            "type" : types_selected,
-            "artistry": artistrys
-        }
-    }
+        "query": document.getElementById('searchBox').value.toLowerCase(),
+        "filter": Object.keys(filter).map(key => {
+            return {
+                "name" : key,
+                "type": filter[key].type,
+                "values": filter[key].values.filter(value => {
+                    return document.getElementById(`${key}_${value.toLowerCase()}`).checked;
+                })
+            };
+        })
+    };
 }
 
-window.onload = function performSearch() {
-    fetch("/api/spells.json")
+window.onload = performSearch();
+
+function performSearch() {
+    /*fetch("/api/spells.json")
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -38,85 +43,67 @@ window.onload = function performSearch() {
     })
     .catch(error => {
         console.error('Fetch error:', error);
-    });
+    });*/
+    console.log("Window loaded");
+    search(documents, getQuery());
 }
+
+const myOffcanvas = document.getElementById('filter')
+myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
+    console.log("Offcanvas Filter closed");
+    search(documents, getQuery());
+})
+
+document.getElementById("search")
+
 
 function search(document, query) {
     console.log(query);
     let results = document;
     if (query != "") {
-        results = document.filter(doc => doc.title.toLowerCase().includes(query.query.toLowerCase()));
+        results = results.filter(doc => doc.title.toLowerCase().includes(query.query.toLowerCase()));
         
     } 
-    // Filter Spells
-    results = (query.filter.type.length > 0 )?filterType(query.filter.type,results):results;
-    results = (query.filter.artistry.length > 0 )?filterArtistry(query.filter.artistry,results):results;
+    query.filter.forEach(filter => {
+        switch (filter.type) {
+            case "multiselect_exclusive":
+                if (filter.values.length > 0) {
+                    console.log(`Performe Filter ${filter.name}`)
+                    results = results.filter(doc => 
+                        doc[filter.name].map(artistry=>{ return filter.values.includes(artistry); }).includes(false) ? false : true
+                    );
+                }
+                break;
+            case "multiselect_inclusive":
+                if (filter.values.length > 0) {
+                    results = results.filter(doc => filter.values.includes(doc[filter.name]));
+                }
+                break;
+            default:
+                break;
+        }
+         
+    })
+    console.log(`${results.length} results found!`)
+    displayResults(results)
 
-    if (results.length > 0){
-        displayResults(results);
+
+}
+
+function displayResults(results) { 
+    if (results.length > 0) {
+        document.getElementById('no-results').classList.add('d-none');
+        document.getElementById('results').classList.remove('d-none');
     } else {
-        displayZeroResults();
+        document.getElementById('no-results').classList.remove('d-none');
+        document.getElementById('results').classList.add('d-none');
     }
-}
 
-function filterArtistry(query, result) {
-    return result.filter(doc => 
-        doc.artistry.toLowerCase().split(", ").map(artistry=>{ return query.includes(artistry); }).includes(false) ? false : true
+    for (let i = 0; i < documents.length; i++) {
+        let element = document.getElementById(documents[i].slug);
         
-    );
-}
+        element.hidden = !(results.includes(documents[i]));
+        
+    }
 
-function filterType(query, result) {
-    return result.filter(doc => query.includes(doc["type"].toLowerCase()));
-}
-
-function displayResults(results) {
-    const navigationsElement = document.getElementById('navigations');
-
-    navigationsElement.innerHTML = `<div class="row text-black-50 ms-3 me-5">
-        <div class="col-5"><small><strong>NAME</strong></small></div>
-        <div class="col-1"><small><strong>STAMINA</strong></small></div>
-        <div class="col-2"><small><strong>DURATION</strong></small></div>
-        <div class="col-1"><small><strong>RANGE</strong></small></div>
-        <div class="col-3"><small><strong>AREA OF EFFECT</strong></small></div>
-    </div>`;
-    const resultsElement = document.getElementById('results');
-    resultsElement.classList.add("accordion");
-
-    resultsElement.innerHTML = "";
-    results.forEach(result => {
-        let listItem = document.createElement('div');
-        listItem.classList.add("accordion-item");
-        listItem.innerHTML=`<div class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${result.slug}" aria-expanded="false" aria-controls="${result.slug}">
-            <div class="row w-100">
-                <div class="col-5">
-                    <h5 class="card-title"><a class="text-dark text-decoration-none" href="${result.url}">${result.title}</a></h5>
-                    <h6 class="card-subtitle text-body-secondary"><small>${result.type} | ${result.artistry}</small></h6>
-                </div>
-                <div class="col-1 fw-semibold align-content-center">${result.cost}</div>
-                <div class="col-2 fw-semibold align-content-center">${result.duration}</div>
-                <div class="col-1 fw-semibold align-content-center">${result.range}</div>
-                <div class="col-3 fw-semibold align-content-center text-truncate">${result.aoe}</div>
-            </div>
-        </button></div>
-        <div id="${result.slug}" class="accordion-collapse collapse" data-bs-parent="#results">
-            <div class="accordion-body">
-                ${result.card}
-            </div>
-        </div>`;
-        resultsElement.appendChild(listItem);
-    });
-}
-
-function displayZeroResults() {
-    const resultsElement = document.getElementById('results');
-
-    resultsElement.innerHTML = `<div class="w-100 d-flex flex-column align-items-center pt-4 mt-4">
-        <h1>No Spells found!</h1>
-    </div>`;
-}
-
-function displayMeta(key, value, size) {
-    return `<div class="col${(size > 1)?`-${size}`: ""}"><small class="fw-semibold">${key}</small><br>${value}</div>`;
 }

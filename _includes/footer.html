@@ -1,0 +1,11 @@
+<div class="container-fluid bg-body-tertiary py-4 mt-4">
+    <div class="content d-flex flex-column flex-sm-row justify-content-around gap-4">
+    {% for element in site.data.navigation.footer-menu %}<div>
+    <h6 class="text-secondary text-uppercase">{{ element.name }}</h6>
+    {% if element.type == "link-list" %}<div class="d-flex flex-column gap-3">
+        {% for item in element.links %}<div>
+            <a href="{{ item.link }}" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover{% if item.active != true %} disabled" aria-disabled="true{% endif %}">{{ item.name }}</a>
+        </div>{% endfor %}
+    </div>{% endif %}
+</div>{% endfor %}</div>
+</div>
