@@ -14,7 +14,7 @@ const handler = async (event) => {
     const results = await collection.find({}).limit(10).toArray();
     return {
       statusCode: 200,
-      body: `${JSON.stringify(results)} Hello World!`,
+      body: ` Hello World!`,
     };
   } catch (error) {
     return { statusCode: 500, body: error.toString() };
