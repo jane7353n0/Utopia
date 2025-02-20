@@ -9,12 +9,12 @@ const col = "Traits";
 
 const handler = async (event) => {
   try {
-    const database = (await clientPromise).db(db);
+    /*const database = (await clientPromise).db(db);
     const collection = database.collection(col);
-    const results = await collection.find({}).limit(10).toArray();
+    const results = await collection.find({}).limit(10).toArray();*/
     return {
       statusCode: 200,
-      body: ` Hello World!`,
+      body: `${process.env.MONGODB_URI} Hello World!`,
     };
   } catch (error) {
     return { statusCode: 500, body: error.toString() };
