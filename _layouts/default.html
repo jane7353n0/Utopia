@@ -10,15 +10,12 @@
   </head>
   <body>
     {% include navigation.html %}
-    <ul id="test"></ul>
+    <div id="test"></div>
     <script>
       (async () => {
         let results = await fetch("/netlify/functions/get-spell").then(response => response.json());
-        results.forEach(result => {
-          const item = document.createElement("li");
-          item.innerText = result.name;
-          document.getElementById("test").appendChild(item);
-        }); 
+        const item = document.getElementById("test");
+        item.innerText = JSON.stringify(results);
       })();
     </script>
     {{ content }}

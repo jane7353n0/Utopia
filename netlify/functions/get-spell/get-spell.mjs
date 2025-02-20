@@ -1,5 +1,5 @@
 // Docs on request and context https://docs.netlify.com/functions/build/#code-your-function-2
-const { MongoClient } = require("mongodb");
+import { MongoClient } from "mongodb";
 
 const mongoClient = new MongoClient(process.env.MONGODB_URI);
 const clientPromise = mongoClient.connect();
@@ -21,7 +21,7 @@ const handler = async (event) => {
   }
 }
 
-module.exports = { handler }
+export default { handler }
 /*
 export default (request, context) => {
   try {
