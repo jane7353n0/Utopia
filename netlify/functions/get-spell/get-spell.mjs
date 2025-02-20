@@ -4,8 +4,8 @@ const { MongoClient } = require("mongodb");
 const mongoClient = new MongoClient(process.env.MONGODB_URI);
 const clientPromise = mongoClient.connect();
 
-const db = "";
-const col = "";
+const db = "Rules";
+const col = "Traits";
 
 const handler = async (event) => {
   try {
