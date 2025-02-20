@@ -13,7 +13,7 @@
     <div id="test"></div>
     <script>
       (async () => {
-        let results = await fetch("/netlify/functions/get-spell").then(response => response.json());
+        let results = await fetch("/.netlify/functions/get-spell").then(response => response.json());
         const item = document.getElementById("test");
         item.innerText = JSON.stringify(results);
       })();
