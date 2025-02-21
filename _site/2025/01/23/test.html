@@ -52,6 +52,14 @@
   </div>
 </nav>
 
+    <div id="test"></div>
+    <script>
+      (async () => {
+        let results = await fetch("/.netlify/functions/get-spell").then(response => response.json());
+        const item = document.getElementById("test");
+        item.innerText = JSON.stringify(results);
+      })();
+    </script>
         <h2>test</h2>
     <small>2025-01-23 21:37:00 +0100</small>
     <div><img src="/assets/img/giphy.webp"></div>

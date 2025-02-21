@@ -52,6 +52,14 @@
   </div>
 </nav>
 
+    <div id="test"></div>
+    <script>
+      (async () => {
+        let results = await fetch("/.netlify/functions/get-spell").then(response => response.json());
+        const item = document.getElementById("test");
+        item.innerText = JSON.stringify(results);
+      })();
+    </script>
     <div class="d-flex justify-content-center">
    <div class="content">
     <nav aria-label="breadcrumb">

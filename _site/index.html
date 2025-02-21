@@ -52,6 +52,14 @@
   </div>
 </nav>
 
+    <div id="test"></div>
+    <script>
+      (async () => {
+        let results = await fetch("/.netlify/functions/get-spell").then(response => response.json());
+        const item = document.getElementById("test");
+        item.innerText = JSON.stringify(results);
+      })();
+    </script>
     <p>Hello World!</p>
 
     <div class="container-fluid bg-body-tertiary py-4 mt-4">
