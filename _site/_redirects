@@ -1,0 +1,2 @@
+/rules/:item/:slug  /rules/:item/view?id=:slug 200!
+/rules/snippet/:item/:slug  /rules/:item/snippet?id=:slug 200!

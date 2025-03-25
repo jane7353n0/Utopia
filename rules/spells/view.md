@@ -1,0 +1,4 @@
+---
+layout: cardview
+collection: spells
+---

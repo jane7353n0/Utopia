@@ -1,0 +1,1842 @@
+[
+  {
+    "slug": "amass-undead",
+    "title": "Amass Undead",
+    "source":"Utopia TTRPG",
+    "category": "Animation",
+    "artistry": [
+      "Wake",
+      "Enchantment",
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Humanoid carcasses",
+      "area": "Surface",
+      "label": "All humanoid carcasses on the same surface as the caster’s starting position"
+    },
+    "stamina": {
+      "set": 5
+    },
+    "content": "Undeath fills the air around you, its tendrils drilling through the earth beneath your feet, attaching to each dead body it finds. Each body comes to life, becoming a **DR 13 Zombie**, each reverting once the spell ends. Each one understands only you, and you may spend 1 turn action or 1 interrupt action to command one or more of them. You may recast the spell before it ends to continue control, given each creature is within 10 meters of you."
+  },
+  {
+    "slug": "animate-furniture",
+    "title": "Animate Furniture",
+    "source":"Utopia TTRPG",
+    "category": "Animation",
+    "artistry": [
+      "Enchantment",
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Large object",
+      "area": null,
+      "label": "Target large object"
+    },
+    "stamina": {
+      "set": 19
+    },
+    "content": "Your fingertips brush against a piece of furniture and it springs into action. It comes to life, becoming a **DR 17 Animated Furniture**, reverting once the spell ends. It understands only you, and you may spend 1 turn action or 1 interrupt action to command it. You may recast the spell before it ends to continue control."
+  },
+  {
+    "slug": "animate-trinket",
+    "title": "Animate Trinket",
+    "source":"Utopia TTRPG",
+    "category": "Animation",
+    "artistry": [
+      "Enchantment",
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Small object",
+      "area": null,
+      "label": "Target small object"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "You turn a small, inanimate object, such as a cup or a hammer, and breathe purpose into it. It comes to life, becoming a **DR 8 Animated Trinket**, reverting once the spell ends. It understands only you, and you may spend 1 turn action or 1 interrupt action to command it. You may recast the spell before it ends to continue control."
+  },
+  {
+    "slug": "battle-scry",
+    "title": "Battle Scry",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Wake",
+      "Enchantment",
+      "Divination"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": "2 m radius",
+      "label": "All target creatures within 2 meters"
+    },
+    "stamina": {
+      "set": 30
+    },
+    "content": "A fury runs through your aura, offering decisive battle stratagem to those around you. You choose one creature that the spell effects. For the duration of the spell, whenever you or another creature affected by the spell blocks or dodges an attack or spell from the chosen creature, its Block Rating and Dodge Rating is doubled for the rest of the action."
+  },
+  {
+    "slug": "bind",
+    "title": "Bind",
+    "source":"Utopia TTRPG",
+    "category": "Debilitation",
+    "artistry": [
+      "Array",
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 20
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 46
+    },
+    "content": "Spectral tendrils wrap themselves around a creature, bringing it to a near-halt. For the duration of the spell, its Land travel becomes 1 and both its Water and Air travel become 0. Upon casting and at the beginning of each turn for the spell's duration, it may make a Will test against you, ending the spell upon succeeding."
+  },
+  {
+    "slug": "blind",
+    "title": "Blind",
+    "source":"Utopia TTRPG",
+    "category": "Debilitation",
+    "artistry": [
+      "Array",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 15
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 13
+    },
+    "content": "Your force a creature's eyes to gloss over black, preventing all visual input from reaching. It becomes {% include link.md type=\"Condition\" name=\"Blinded\" %} for the duration of the spell. Upon casting and at the beginning of each turn for the spell's duration, it may make a Will test against you, ending the spell upon succeeding."
+  },
+  {
+    "slug": "cleanse",
+    "title": "Cleanse",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object",
+      "area": null,
+      "label": "Target impure object or liquid"
+    },
+    "stamina": {
+      "set": 5
+    },
+    "content": "You hover your hand over up to a kilogram of impure or soiled material or up to 1 liter of liquid, removing it of its impurities."
+  },
+  {
+    "slug": "crackling-dart",
+    "title": "Crackling Dart",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 5
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "You throw a thin, energetic projectile fiercely at your target, dealing **1d20 Energy damage**. Creatures may block or dodge damage dealt this way."
+  },
+  {
+    "slug": "cure-maximus",
+    "title": "Cure Maximus",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "flex": 36
+    },
+    "content": "With ultimate force, you completely cleanse a creature of all undoing. Upon casting and at the beginning of each turn for the spell's duration, you must consume a Mythical or rarer item or component. Upon doing so, the creature **regains Xd12 DHP**. This spell ends if you fail to consume an item or component."
+  },
+  {
+    "slug": "cure-medius",
+    "title": "Cure Medius",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "flex": 24
+    },
+    "content": "You cast a healing light down, purifying one's wounds with great precision. Upon casting and at the beginning of each turn for the spell's duration, you must consume a Rare or rarer item or component. Upon doing so, the creature **regains Xd12 DHP**. This spell cannot force a creature to regain more than 100 DHP, and ends if you fail to consume an item or component."
+  },
+  {
+    "slug": "cure-minimus",
+    "title": "Cure Minimus",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "flex": 12
+    },
+    "content": "You imbue a suffering creature with a surgical magic, clsoing their internal wounds. Upon casting and at the beginning of each turn for the spell's duration, you must consume a Common or rarer item or component. Upon doing so, the creature **regains Xd12 DHP**. This spell cannot force a creature to regain more than 25 DHP, and ends if you fail to consume an item or component."
+  },
+  {
+    "slug": "disguise-self",
+    "title": "Disguise Self",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Enchantment",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "A character evolves in your mind, something of similar stature but contrasting appearance to the creature you're touching. Its appearance is modified to match the new image for the duration of the spell."
+  },
+  {
+    "slug": "dispell",
+    "title": "Dispell",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Spell",
+      "area": null,
+      "label": "Target spell"
+    },
+    "stamina": {
+      "set": 5
+    },
+    "content": "You grasp something affected by a spell, methodically unweaving its runes. If a creature is currently focusing or concentrating on the spell, it makes a Will contest against you. Given the spell is no older than a day and any opposing creatures fail their test, the spell ends."
+  },
+  {
+    "slug": "divine-coin",
+    "title": "Divine Coin",
+    "source":"Utopia TTRPG",
+    "category": "Ascertainment",
+    "artistry": [
+      "Divination"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "You flip a coin from your fingers, asking a yes or no question while it spins. The coin magically lands based on the accurate answer to your question, landing on heads for yes and tails for no. If the question doesn't have a proper answer or requires knowledge of the future, the coin will not land on either side."
+  },
+  {
+    "slug": "electrocute",
+    "title": "Electrodute",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "set": 4,
+      "flex": 5
+    },
+    "content": "You cover the target with a pillar of electricity. Upon casting and at the beginning of each turn for the spell's duration, it's dealt **Xd8 Energy damage**. Creatures may block or dodge damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "elemental-armor",
+    "title": "Elemental Armor",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Evocation",
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 20
+    },
+    "content": "You conjure elemental plates around the body of a vulnerable creature. Given the slot isn't occupied, the creature becomes equipped with {% include link.md type=\"Items\" name=\"Chest Armor\" %} that grants **10 defense in your choice of Energy, Heat, or Chill**. It disappears once the spell ends."
+  },
+  {
+    "slug": "elemental-blade",
+    "title": "Elemental Blade",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 16
+    },
+    "content": "You conjure a small elemental blade fitted to your grip. It has the same stats as a {% include link.md type=\"Items\" name=\"Shiv\" %}, but deals your choice of **Energy, Heat, or Chill damage** instead. It disappears once the spell ends."
+  },
+  {
+    "slug": "elemental-bolt",
+    "title": "Elemental Bolt",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "set": 4,
+      "flex": 3
+    },
+    "content": "Choose between **Energy, Heat, or Chill**. You surround your target with a column of magical power. It's dealt **Xd8 damage of the chosen type**. Creatures may block or dodge damage dealt this way."
+  },
+  {
+    "slug": "elemental-staff",
+    "title": "Elemental Staff",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 18
+    },
+    "content": "You conjure a large, decorated staff sized for you. It has the same stats as a {% include link.md type=\"Items\" name=\"Maul\" %}, but deals your choice of **Energy, Heat, or Chill damage** instead. It disappears once the spell ends."
+  },
+  {
+    "slug": "energize",
+    "title": "Energize",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Weapon",
+      "area": null,
+      "label": "Target weapon that isn't currently imbued"
+    },
+    "stamina": {
+      "flex": 3
+    },
+    "content": "You imbue a weapon, submurging it in crackling electricity. A weapon imbued this way deals an additional **Xd8 Energy damage on its next attack**."
+  },
+  {
+    "slug": "fabricate",
+    "title": "Fabricate",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Evocation",
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "You imagine an object or shape in your head, manifest ing a clay-like substance in the chosen shape. The object can be up to 1 liter or 4 kilograms, made purely out of magimatter, having no special properties. The object dissipates when the spell ends."
+  },
+  {
+    "slug": "fear",
+    "title": "Fear",
+    "source":"Utopia TTRPG",
+    "category": "Debilitation",
+    "artistry": [
+      "Illusion",
+      "Divination"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 25
+    },
+    "content": "You burrow yourself into the mind of a creature, divulging its worst fear and looming it over their shoulder, filling it with consistent dread. It makes a Will contest against you and repeats the contest at the beginning of each turn for the spell's duration. Each time the creature fails, it's dealt **2d6 Psyche damage** and feels as though it's being followed by its worst fear. Upon succeeding, the spell ends."
+  },
+  {
+    "slug": "fire-strike",
+    "title": "Fire Strike",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 20
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "set": 12
+    },
+    "content": "You shoot an accurate bolt of flame at your target dealing **1d10 Heat damage**. Creature may block or dodge damage dealt this way."
+  },
+  {
+    "slug": "fireball",
+    "title": "Fireball",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array",
+      "Wake"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 15
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": "4m radius sphere",
+      "label": "All target objects and creatures within 4 meters of a chosen point"
+    },
+    "stamina": {
+      "set": 80
+    },
+    "content": "You hurdle a massive ball of flame and molten destruction. Upon casting and at the beginning of each turn for the spell's duration, all targets are dealt **8d6 Heat damage**. Creatures may block or dodge damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "flash-freeze",
+    "title": "Flash Freeze",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Wake"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": "10m radius surface",
+      "label": "All target objects and creatures on the same surface as the caster's starting position within 10 meters"
+    },
+    "stamina": {
+      "set": 62
+    },
+    "content": "The ground beneath you freezes over with a devastating force. Upon casting and at the beginning of each turn for the spell's duration, all targets are dealt **6d6 Chill damage**. Creatures may block or dodge damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "flight",
+    "title": "Flight",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 18
+    },
+    "content": "A pair of spectral wings sprout of the back of a creature touched by the caster. For the duration of the spell, its Air travel becomes equal to half its Speed score, rounded down, given it wasn't already higher."
+  },
+  {
+    "slug": "freeze",
+    "title": "Freeze",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Evocation"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object",
+      "area": null,
+      "label": "Target object"
+    },
+    "stamina": {
+      "set": 3
+    },
+    "content": "You bring an item down to a deep freeze, chilling it enough to form basic ice. It remains magically frozen until the spell ends or it's forcefully thawed."
+  },
+  {
+    "slug": "genderbend",
+    "title": "Genderbend",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 30
+    },
+    "content": "You manifest physiological change unto a touching creature, altering their physical and perceivable gender for the duration of the spell. You may convert a creature to masculine, feminine, or androgynous, reverting back once the spell ends."
+  },
+  {
+    "slug": "heal",
+    "title": "Heal",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "flex": 12
+    },
+    "content": "You place a pure hand on a suffering creature, alleviating its pains. Upon casting and at the beginning of each turn for the spell's duration, the creature **regains Xd6 SHP**. Then, if the creature cannot regain any additional SHP, the spell ends."
+  },
+  {
+    "slug": "hunters-mark",
+    "title": "Hunter's Mark",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Array",
+      "Enchantment",
+      "Divination"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 20
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 16
+    },
+    "content": "Your eyes glow with poise, marking a creature within your sights. Tests you make for accuracy against the creature gain 2 additional points of favor for the duration of the spell."
+  },
+  {
+    "slug": "ice-knife",
+    "title": "Ice Knife",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "You send a sharp, icy missile directly at your target, dealing **2d8 Chill damage**. Creatures may block or dodge damage dealt this way."
+  },
+  {
+    "slug": "ignite",
+    "title": "Ignite",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Evocation"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object",
+      "area": null,
+      "label": "Target object"
+    },
+    "stamina": {
+      "set": 3
+    },
+    "content": "You ignite something flammable, such as a campfire or a candle, with pure magical will. It remains magically lit until the spell ends or it's forcefully snuffed."
+  },
+  {
+    "slug": "illuminate",
+    "title": "Illuminate",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Array",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Point",
+      "area": null,
+      "label": "Choosen point within range"
+    },
+    "stamina": {
+      "set": 3
+    },
+    "content": "A chosen spot begins to glow with a vibrant light, whatever color you choose. The light remains station ary regardless of creatures or objects around it. The light dissipates once the spell ends."
+  },
+  {
+    "slug": "invisibility",
+    "title": "Invisibility",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Array",
+      "Enchantment",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 5
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Up to 2 target creatures"
+    },
+    "stamina": {
+      "set": 22
+    },
+    "content": "Light fades through two creatures of your choice, rendering them completely invisible. Creatures remain invisible for the duration of the spell, gaining 2 points of favor on tests to remain inconspicuous."
+  },
+  {
+    "slug": "large-vissage",
+    "title": "Large Vissage",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Array",
+      "Enchantment",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Point",
+      "area": null,
+      "label": "Chosen point within range"
+    },
+    "stamina": {
+      "set": 21
+    },
+    "content": "A massive, indistinguishable illusion presents itself in front of you, design intricately through your mind. It may be no larger than 10 meters in any dimension, but can be animated within its bounds in any way you choose, including changing it during the spell's duration. It is as realistic as you can imagine, though creatures that touch it will become immediately aware of its falsity. It dissipates once the spell ends."
+  },
+  {
+    "slug": "lightning-bolt",
+    "title": "Lightning Bolt",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Wake"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": "max. 5m line",
+      "label": "All targets between the caster's starting position and a chosen point within 5 meters"
+    },
+    "stamina": {
+      "set": 41
+    },
+    "content": "A vibrant pillar of lightning erupts from you. Upon casting and at the beginning of each turn for the spell's duration, all targets are dealt **4d8 Energy damage**. Creatures may block or dodge damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "locate-object",
+    "title": "Locate Object",
+    "source":"Utopia TTRPG",
+    "category": "Ascertainment",
+    "artistry": [
+      "Divination"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "You imagine an item in your mind with any level of specificity, whether it be a generic blade or a ruby-encrusted boot you've seen in the past. For the duration of the spell, you are aware of the direct direction to find the nearest item that fits the description given, completely ignoring obstacles."
+  },
+  {
+    "slug": "luck",
+    "title": "Luck",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Wake",
+      "Enchantment",
+      "Divination"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": "5m radius",
+      "label": "All target creatures within 5 meters"
+    },
+    "stamina": {
+      "set": 68
+    },
+    "content": "A shimmering light gleams in your eyes as luck showers its favor unto you. For the duration of the spell, whenever you make a roll against an affected creature, including damage rolls, blocking, dodging, and tests, each die cannot roll less than half of its maximum, rounded down."
+  },
+  {
+    "slug": "mage-armor",
+    "title": "Mage Armor",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Evocation",
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 14
+    },
+    "content": "You manifest a suit of magical armor around an unequipped creature. Given the slot isn't occuiped, the creature becomes equipped with chest armor with the same stats as {% include link.md type=\"Items\" name=\"Body Armor\"%}. It disappears once the spell ends."
+  },
+  {
+    "slug": "mage-shield",
+    "title": "Mage Shield",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Evocation",
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true,
+      "trigger": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 11
+    },
+    "content": "You speak a protective incantation, carving temporary runes into your skin. The next time you are subject to an attack, a magical shield manifests given you have an open hand available. While equipped, your **Dodge Rating increases by 2d12**. The shield disappears once the spell ends."
+  },
+  {
+    "slug": "magenhance",
+    "title": "Magenhance",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 28
+    },
+    "content": "A specular force runs through you, magically enhancing your abilities. Upon casting, you choose a subtrait. For the duration of the spell, **that subtrait is increased by 4**."
+  },
+  {
+    "slug": "magnesus",
+    "title": "Magnesus",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Array",
+      "Wake",
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 25
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "set": 86
+    },
+    "content": "You send a magnetic grasp through your target, forcing everything around it to gravitate towards it with tremendous force. For the spell's duration, **all objects and creatures within 5 meters that weigh 200 kilograms or less are forcefull attracted to the target**. A creature may prevent this force on a specific entity with a successful TD 20 Strength test."
+  },
+  {
+    "slug": "make-feeble",
+    "title": "Make Feeble",
+    "source":"Utopia TTRPG",
+    "category": "Debilitation",
+    "artistry": [
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 45
+    },
+    "content": "You magically siphon some of the driving force of a creature, forcing its atrophy. For the duration of the spell, its Speed, Dexterity, Power, and Fortitude each decrease by 2, minimum of 0. Upon casting and at the beginning of each turn for the spell's duration, it may make a Will test against you, ending the spell upon succeeding."
+  },
+  {
+    "slug": "medium-vissage",
+    "title": "Medium Vissage",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Array",
+      "Enchantment",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Point",
+      "area": null,
+      "label": "Chosen point within range"
+    },
+    "stamina": {
+      "set": 15
+    },
+    "content": "You present a vivification from your mind, realized through illusionary magic. It may be no larger than 3 meters in any dimension, but can be animated within its bounds in any way you choose, including changing it during the spell's duration. It is as realistic as you can imagine, though creatures that touch it will become immediately aware of its falsity. It dissipates once the spell ends."
+  },
+  {
+    "slug": "permafrost",
+    "title": "Permafrost",
+    "source":"Utopia TTRPG",
+    "category": "Debilitation",
+    "artistry": [
+      "Evocation",
+      "Array",
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 15
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 41
+    },
+    "content": "A corrosive sheet of frost encases a creature, chilling its body and preventing it from moving. Upon casting and at the beginning of each turn for the spell's duration, it must make a Strength contest against your Will test, remaining Paralyzed until it succeeds. As well, it's dealt **4d4 Chill damage**. Creatures may block or dodge damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "pixie-light",
+    "title": "Pixie Light",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Enchantment",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 5
+    },
+    "content": "You summon a small orb of light, orbiting you in a graceful dance that illuminaates your surroundings. It can be any shape, any color, and travel around you at will, but must stay within 1 meter of you, dissipating once the spell ends."
+  },
+  {
+    "slug": "premonition-dream",
+    "title": "Premonition Dream",
+    "source":"Utopia TTRPG",
+    "category": "Ascertainment",
+    "artistry": [
+      "Enchantment",
+      "Divination"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 28
+    },
+    "content": "A vision comes to you, revealing some basic features of your future. You make a preminition roll of 3d6, saving it. The next time you would make a test within the spell's duration, you instead use the premonition roll, then roll a new premonition. If the test would have favor, duplicate the lowest die, and remove the highest die if it would have disfavor."
+  },
+  {
+    "slug": "preserve",
+    "title": "Preserve",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Array",
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature with less than 1 DHP that hasn't died yet"
+    },
+    "stamina": {
+      "set": 9
+    },
+    "content": "You gently preserve the body of one nearly deceased, a magic essence preventing it from decaying. Its DHP becomes 0. If an affect would lower its DHP without killing it during the spell's duration, its DHP becomes 0 again instead."
+  },
+  {
+    "slug": "raise-undead",
+    "title": "Raise Undead",
+    "source":"Utopia TTRPG",
+    "category": "Animation",
+    "artistry": [
+      "Enchantment",
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Humanoid carcass",
+      "area": null,
+      "label": "Target humanoid carcass"
+    },
+    "stamina": {
+      "set": 21
+    },
+    "content": "Artificial life flows through your fingertips and into a deceased body. The body comes to life, becoming a **DR 13 Zombie**, reverting once the spell ends. It understands only you, and you may spend 1 turn action or 1 interrupt action to command it. You may recast the spell before it ends to continue control."
+  },
+  {
+    "slug": "rend",
+    "title": "Rend",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "flex": 8
+    },
+    "content": "You slowly rip the soul of a creature from its body. It makes a Will contest against you and repeats the contest at the beginning of each turn for the spell's duration. Each time the creature fails, it's dealt **Xd4 damage**. Damage dealt this way cannot be blocked or dodged and is dealt **directly to DHP**, but cannot reduce the creature's DHP to less than 0. Upon succeeding, the spell ends."
+  },
+  {
+    "slug": "ressurect",
+    "title": "Ressurect",
+    "source":"Utopia TTRPG",
+    "category": "Animation",
+    "artistry": [
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "DR X or level X creature with less than 1 DHP that hasn't died yet."
+    },
+    "stamina": {
+      "flex": 1
+    },
+    "content": "You grasp a soul that's straying away from its original body and shunt it back into a dying creature. Its stamina and DHP each become 1."
+  },
+  {
+    "slug": "resuscitate",
+    "title": "Resuscitate",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Necromancy"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature with less than 1 DHP that hasn't died yet"
+    },
+    "stamina": {
+      "set": 10
+    },
+    "content": "You breathe mortal life back into a dying creature, pulling it away from the grasp of death. Its stamina and DHP each become 1 and the creature gains 4 levels of Fatigue. A level of Fatigue gained this way is removed each time it completes a rest."
+  },
+  {
+    "slug": "silence",
+    "title": "Silence",
+    "source":"Utopia TTRPG",
+    "category": "Debilitation",
+    "artistry": [
+      "Array",
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      }
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 22
+    },
+    "content": "An arcane thread sews a creature's mouth shut. For the duration of the spell, **it cannot physically speak**. Upon casting and at the beginning of each turn for the spell's duration, it may make a Will test against you, ending the spell upon succeeding."
+  },
+  {
+    "slug": "silent-steps",
+    "title": "Silent Steps",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Enchantment"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 8
+    },
+    "content": "You cloak yourself in an aura of silence, completely removing your audible outputs. You are completely silent, gaining **2 points of favor on tests to remain inconspicuous** for the duration of the spell."
+  },
+  {
+    "slug": "small-vissage",
+    "title": "Small Vissage",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Array",
+      "Enchantment",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Point",
+      "area": null,
+      "label": "Chosen point within range"
+    },
+    "stamina": {
+      "set": 12
+    },
+    "content": "An image leaps from your mind and presents itself as an illusionary object or image. It may be no larger than 1 meter in any dimension, but can be animated within its bounds in any way you choose, including changing it during the spell's duration. It is as realistic as you can imagine, though creatures that touch it will become immediately aware of its falsity. It dissipates once the spell ends."
+  },
+  {
+    "slug": "surveil",
+    "title": "Surveil",
+    "source":"Utopia TTRPG",
+    "category": "Ascertainment",
+    "artistry": [
+      "Divination"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 3
+    },
+    "content": "You place a divine eye on a creature, delving into its current status of body. Upon casting, choose one between current SHP, current DHP, current stamina, level or DR, Block Rating, Dodge Rating, a single type of defense, or a single subtrait score. You learn the chosen information about the creature."
+  },
+  {
+    "slug": "sweetfire",
+    "title": "Sweetfire",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array",
+      "Enchantment",
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "minute"
+      },
+      "focus:": true
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 5
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 24
+    },
+    "content": "A creature spontaneously combusts with a phantasmal blue flame, feeling no pain whatsoever. Upon casting and at the beginning of each turn for the spell's duration, its dealt **4d4 Heat damage**. It may block or dodge the damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "telekinesis",
+    "title": "Telekinesis",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Array",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "set": 14
+    },
+    "content": "Your mind wraps its phantasmal hands around an object or creature, maneuvering it through force of will. Given it weighs no more than 100 kilograms, you move it anywhere within 10 meters of its starting location and may spend 1 turn action or 1 interrupt action to change its pathing during the spell's duration. Creatures with proper leverage may resist this effect by making a Strength contest against your Will test."
+  },
+  {
+    "slug": "terrorize",
+    "title": "Terrorize",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Illusion"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "flex": 4
+    },
+    "content": "You terrorize a creature, burdening its mind. It makes a Wiss contest against you and repeats the contest at the beginning of each turn for the spell's duration. Each time the creature failsm it's dealt **Xd4 Psyche damage**. Upon succeeding the spell ends."
+  },
+  {
+    "slug": "thermal-blast",
+    "title": "Thermal Blast",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Array",
+      "Wake"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Ranged",
+      "range": 10
+    },
+    "aoe": {
+      "target": "Objects or creature",
+      "area": "2m radius sphere",
+      "label": "All objects or creature within 2 meters of a chosen point"
+    },
+    "stamina": {
+      "set": 23,
+      "flex": 9
+    },
+    "content": "Choose between **Heat or Chill**. You create a sphere of destructive power. Upon casting and at the beginning of each turn for the spell's duration, all targets are dealt **Xd12 damage of the chosen type**. Creatures may block or dodge damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "thermal-charge",
+    "title": "Thermal Charge",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Weapon",
+      "area": null,
+      "label": "Target weapon that isn’t currently imbued"
+    },
+    "stamina": {
+      "flex": 3
+    },
+    "content": "Choose between **Heat or Chill**. You imbue a weapon with thermal power, surrounding it in a faint glow. A weapon imbued this way deals an additional Xd8 damage of the chosen type on its next attack."
+  },
+  {
+    "slug": "thermal-strike",
+    "title": "Thermal Strike",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": null,
+      "label": "Target object or creature"
+    },
+    "stamina": {
+      "flex": 6
+    },
+    "content": "Choose between **Heat or Chill**. You force thermal power unto your target. Upon casting and at the beginning of each turn for the spell's duration, it's dealt **Xd8 damage of the chosen type**. Creatures may block or dodge damage dealt this way, and if the spell deals no damage in a turn, the spell ends."
+  },
+  {
+    "slug": "third-eye",
+    "title": "Third Eye",
+    "source":"Utopia TTRPG",
+    "category": "Ascertainment",
+    "artistry": [
+      "Divination"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 5
+    },
+    "content": "You place a spectral eye on an object such as a wall or in arrow, sacrificing your vision for what it would see. For the spell's duration, you become Blinded but are able to see as if you were centered on the chosen object."
+  },
+  {
+    "slug": "thunder-clap",
+    "title": "Thunder Clap",
+    "source":"Utopia TTRPG",
+    "category": "Combat",
+    "artistry": [
+      "Evocation",
+      "Wake"
+    ],
+    "duration": {
+      "type": "Immediate"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object or creature",
+      "area": "3m radius 90° cone",
+      "label": "All objects and creatures within a 90-degree cone extending 3 meters from the caster"
+    },
+    "stamina": {
+      "set": 41
+    },
+    "content": "You summon a cacophanous boom in front of you, dealing **4d8 Energy damage** to all targets. Creatures may block or dodge damage dealt this way."
+  },
+  {
+    "slug": "turn-to-gold",
+    "title": "Turn to Gold",
+    "source":"Utopia TTRPG",
+    "category": "Utility",
+    "artistry": [
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      }
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Object",
+      "area": null,
+      "label": "Target object"
+    },
+    "stamina": {
+      "set": 30
+    },
+    "content": "You hold a small nugget of gold in your hands, using its metallic structure to convert a piece of metal. Given you are touching pure gold and the object is made of pure metal and no heavier than 1 kilogram, it is converted to gold. It reverts back to its original form once the spell ends."
+  },
+  {
+    "slug": "vulnerability",
+    "title": "Vulnerability",
+    "source":"Utopia TTRPG",
+    "category": "Debilitation",
+    "artistry": [
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Concentration"
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Creature",
+      "area": null,
+      "label": "Target creature"
+    },
+    "stamina": {
+      "set": 20
+    },
+    "content": "You produce a magical failure point in a creature's body, **reducing a defense of your choice by 8** for the duration. Upon casting and at the beginning of each turn for the spell's duration, it may make a Will test against you, ending the spell upon succeeding."
+  },
+  {
+    "slug": "water-breathing",
+    "title": "Water Breathing",
+    "source":"Utopia TTRPG",
+    "category": "Aid",
+    "artistry": [
+      "Enchantment",
+      "Alteration"
+    ],
+    "duration": {
+      "type": "Duration",
+      "time": {
+        "amount": 1,
+        "unit": "hour"
+      },
+      "focus": true
+    },
+    "range": {
+      "type": "Touch"
+    },
+    "aoe": {
+      "target": "Self",
+      "area": null,
+      "label": "Self"
+    },
+    "stamina": {
+      "set": 15
+    },
+    "content": "A formation of amphibious gills manifest along the caster. For the duration of the spell, you can breathe in air and in water."
+  }
+]
+ 

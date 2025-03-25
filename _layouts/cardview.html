@@ -1,0 +1,34 @@
+---
+layout: content
+---
+<div class="card" id="card"></div>
+<script src="/assets/js/content-display.js"></script>
+<script>
+    const collection = "{{ page.collection | capitalize }}";
+    console.log(window.location.href);
+
+    try {
+        const itemName = window.location.href.split("/")[window.location.href.split("/").length -1];
+        console.log(itemName);
+        (async () => {
+        let item = await fetch(`/.netlify/functions/get-item?collection=${collection}&slug=${itemName}`).then(response => response.text());
+        item = JSON.parse(item)[0];
+        console.log(item);
+    
+        var header = document.getElementsByTagName("h1")[0];
+        header.innerHTML = item.title;
+        
+        document.getElementById('card').appendChild(cardList([
+            cardGrid(item.title, item.meta), 
+            parseContent(item.content),
+            Object.assign(document.createElement('div'), {
+                className: 'card-body d-flex justify-content-between',
+                innerHTML: `<div><small>Tags: <span class="badge bg-light text-dark"></span></small></div><div class="text-end fst-italic"><small>Source: <span>${item.source}</span></small></div>`
+            })
+        ]));
+        
+    })();
+    } catch (error) {
+
+    }
+</script>

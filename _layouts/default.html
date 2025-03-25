@@ -5,20 +5,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="/assets/css/styles.css">
       <script src="/assets/js/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
-      <title>{{ page.title }} | {{page.collection }} | {{ site.title }}</title> 
-  </head>
+      <title>{{ page.title }} |{% unless page.collection.length == 0 %}{{page.collection }} |{% endunless %} {{ site.title }}</title> 
   </head>
   <body>
-    {% include navigation.html %}
-    <div id="test"></div>
-    <script>
-      (async () => {
-        let results = await fetch("/.netlify/functions/get-spell").then(response => response.json());
-        const item = document.getElementById("test");
-        item.innerText = JSON.stringify(results);
-      })();
-    </script>
-    {{ content }}
-    {% include footer.html %}
+    {% include navigation.html type="top" %}
+    <div class="content my-4">
+      {{content}}
+    </div>
+    {% include navigation.html type="footer" %}
   </body>
 </html>

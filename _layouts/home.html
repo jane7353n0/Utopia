@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="d-flex flex-column align-items-center gap-4">
+    <div class="card border-0 mt-4">
+        <div class="card-body text-center">
+            <span class="card-title display-1">{{site.title}}</span>
+            <hr width="100%">
+            <figure>
+                <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+        </div>
+    </div>{% assign navigation = site.data.navigation | where: "type", "top" | last %}{% for item in navigation.items %}
+    <div class="card w-100">{% assign modulo_2 = forloop.index | modulo: 2 %}
+        <div class="row g-2{% if modulo_2 == 0 %} flex-row-reverse rounded-end{% else %} rounded-start{% endif %}">
+            <div class="col-md-4" style="background: url({{ item.img }}) no-repeat center;background-size: cover;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 id="{{ item.name | downcase }}" class="card-title">{{ item.name }}</h1>
+                    <p>{{item.description}}</p>
+
+                    <ul class="nav nav-pills card-footer-pills">{% for sub in item.items %}
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ sub.link }}">{{ sub.name }}</a>
+                      </li>
+                    {% endfor %}</ul>
+                </div>
+            </div>
+        </div>
+    </div>{% endfor %}
+</div>

@@ -1,12 +1,32 @@
+$color-mode-type: media-query;
 @import "toc";
 @import "card";
-@import "navigation";
 
 .content {
   @include make-container();
   max-width: map-get($container-max-widths, "xl");
+}
 
-  > h1 {
-    @extend .mb-4;
+
+
+body {
+  background-color: var(--bs-dark-bg-subtle);
+  background-image: url("/assets/img/galaxy-space-fantasy-science-fiction-ci-2560x1440.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: $light-bg-subtle;
+
+}
+
+
+@include color-mode(dark) {
+  .navbar {
+    color: var(--bs-primary-text-emphasis);
+    background-color: var(--bs-dark-bg-subtle);
   }
 }
+

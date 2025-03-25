@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/assets/css/styles.css">
+      <script src="/assets/js/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+      <title> |spells | Utopia VTT</title> 
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="top">
+    <div class="container-fluid content">
+        <a class="navbar-brand" href="/">Utopia VTT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-top" aria-controls="navbar-top" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-top">
+            <ul class="navbar-nav mb-2 mb-lg-0 me-auto  navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link" href="/#collection">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#compendium">Compendium</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/#rules">Rules</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      User
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="content my-4">
+      <div class="d-flex justify-content-center">
+   <div class="content">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/rules">Home</a></li>
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/rules/spells">Home</a></li>
+        
+        <li class="breadcrumb-item active" aria-current="page"></li>
+        
+      
+    </ol>
+</nav>
+
+    <h1></h1>
+    <div>
+        <div class="card" id="card"></div>
+<script src="/assets/js/content-display.js"></script>
+<script>
+    const collection = "Spells";
+    console.log(window.location.href);
+
+    try {
+        const itemName = window.location.href.split("/")[window.location.href.split("/").length -1];
+        console.log(itemName);
+        (async () => {
+        let item = await fetch(`/.netlify/functions/get-item?collection=${collection}&slug=${itemName}`).then(response => response.text());
+        item = JSON.parse(item)[0];
+        console.log(item);
+    
+        var header = document.getElementsByTagName("h1")[0];
+        header.innerHTML = item.title;
+        
+        document.getElementById('card').appendChild(cardList([
+            cardGrid(item.title, item.meta), 
+            parseContent(item.content),
+            Object.assign(document.createElement('div'), {
+                className: 'card-body d-flex justify-content-between',
+                innerHTML: `<div><small>Tags: <span class="badge bg-light text-dark"></span></small></div><div class="text-end fst-italic"><small>Source: <span>${item.source}</span></small></div>`
+            })
+        ]));
+        
+    })();
+    } catch (error) {
+
+    }
+</script>
+    </div>
+    </div> 
+</div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg" id="footer">
+    <div class="container-fluid content"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-footer" aria-controls="navbar-footer" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbar-footer">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/privacy">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+            </ul></div>
+    </div>
+</nav>
+  </body>
+</html>

@@ -1,68 +1,38 @@
-top_menu:
-- name: Collections
-  type: Dropdown
-  items: 
-  - name: Campaigns (Coming soon)
-    type: Link
-    link: "#"
-  - name: Characters (Coming soon)
-    type: Link
-    link: "#"
-- name: Compendium
-  type: Dropdown
+- 
+  type: top
   items:
-  - name: Utopia TTRPG (WiP)
-    type: Link
-    link: /compendien/utopia-ttrpg
-- name: Rules
-  type: Dropdown
+  - name: Collections
+    link: /#collection
+    img: "/assets/img/alexspyro-screenshot00010.jpg"
+    description: "Description coming soon ..."
+    items:
+    - name: Characters
+      link: /#
+      img: "/assets/img/Utopia-Logo.png"
+  - name: Compendium
+    link: /#compendium
+    img: "/assets/img/Utopia-Logo.png"
+    description: "Description coming soon ..."
+    items:
+    - name: Utopia TTRPG
+      link: /#
+      img: "/assets/img/Utopia-Logo.png"
+  - name: Rules
+    link: /#rules
+    img: "/assets/img/Utopia-Logo.png"
+    description: "Description coming soon ..."
+    items:
+    - name: Spezies
+      link: /#
+      img: "/assets/img/Utopia-Logo.png"
+- 
+  type: footer
   items:
-  - name: Spells (WiP)
-    type: Link
-    link: /spells
-  - name: Items (Coming soon)
-    type: Link
-    link: "#"
-  - name: Spezies (Coming soon)
-    type: Link
-    link: "#"
-  - name: Talent (Coming soon)
-    type: Link
-    link: "#"
-  - name: Spezialized Talent (Coming soon)
-    type: Link
-    link: "#"
-footer-menu:
-- name: Support
-  type: link-list
-  links:
-  - name: Support Forum
-    link: "#"
-    active: false
-  - name: Support me with coffee
-    link: "#"
-    active: false
-  - name: Cookie Settings
-    link: "#"
-    active: false
-- name: About
-  type: link-list
-  links:
-  - name: Contact us
-    link: "#"
-    active: false
-  - name: About us
+  - name: Contact
+    link: /contact
+  - name: About
     link: "/about"
-    active: false
-  - name: Myramyth
-    link: "https://www.myramyth.com/"
-    active: true
-- name: Administration
-  type: link-list
-  links:
-  - name: Decap CMS
-    link: /admin
-    active: true
-  - name: GitHub
-    link: "https://www.github.com/"
-    active: true
+  - name: Privacy
+    link: /privacy
+  - name: Support
+    link: "#"

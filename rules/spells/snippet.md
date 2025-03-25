@@ -1,0 +1,4 @@
+---
+layout: snippet
+collection: spells
+---

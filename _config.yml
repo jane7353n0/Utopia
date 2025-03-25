@@ -18,6 +18,7 @@ collections:
     output: false
   
 permalink: /:categories/:year/:month/:day/:title
+title: Utopia VTT
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
@@ -45,6 +46,8 @@ defaults:
     values:
       layout: chapter
       toc: true
+
+include: [".htaccess","_redirects"]
 
 toc:
   min_level: 2
