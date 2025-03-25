@@ -1,177 +1,297 @@
 backend:
   name: github
-  repo: jane7353n0/Utopia # Path to your GitHub repository
-  # optional, defaults to master
+  repo: jane7353n0/Utopia
   branch: main
-
-  # This line should *not* be indented
-media_folder: "assets/img" # Media files will be stored in the repo under images/uploads
-
+media_folder: assets/img
 collections:
-- name: "blog" # Used in routes, e.g., /admin/collections/blog
-  label: "Blog" # Used in the UI
-  folder: "_posts/blog" # The path to the folder where the documents are stored
-  create: true # Allow users to create new documents in this collection
-  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  fields: # The fields for each document, usually in front matter
-    - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Publish Date", name: "date", widget: "datetime" }
-    - { label: "Featured Image", name: "thumbnail", widget: "image" }
-    - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
-    - { label: "Body", name: "body", widget: "markdown" }
-- name: compendium
-  label: "Compendium"
-  folder: "_compendien/"
-  create: true
-  slug: "{{slug}}"
-  fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Body", name: "body", widget: "markdown" }
-- name: chapter
-  label: "Chapter"
-  summary: "{{compendium}} Chapter {{chapter}} - {{title}}"
-  folder: "_chapter/"
-  create: true
-  path: "{{compendium}}/{{chapter}}-{{slug}}"
-  view_groups: 
-    - { label: Compendium, field: compendium }
-  sortable_fields: ['commit_date', 'title', 'chapter', 'commit_author']
-  fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: Compendium, name: compendium, widget: relation, collection: compendium, search_fields: [title], value_field: "{{slug}}", display_fields: [title] }
-    - { label: "Chapter", name: "chapter", widget: "number"}
-    - { label: "Body", name: "body", widget: "markdown" }
-- name: settings
-  label: Settings
-  files:
-  - name: nav
-    label: Navigation
-    file: "_data/navigation.yml"
+  - name: blog
+    label: Blog
+    folder: _posts/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-    - label: 'Top Menu'
-      name: 'top_menu'
-      widget: 'list'
-      types: 
-      - name: Link
-        label: Link
-        widget: object
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: blog
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Featured Image
+        name: thumbnail
+        widget: image
+      - label: Rating (scale of 1-5)
+        name: rating
+        widget: number
+      - label: Body
+        name: body
+        widget: markdown
+  - name: compendium
+    label: Compendium
+    folder: _compendien/
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Body
+        name: body
+        widget: markdown
+  - sortable_fields:
+      - commit_date
+      - title
+      - chapter
+      - commit_author
+    path: "{{compendium}}/{{chapter}}-{{slug}}"
+    summary: "{{compendium}} Chapter {{chapter}} - {{title}}"
+    name: chapter
+    folder: _chapter/
+    view_groups:
+      - label: Compendium
+        field: compendium
+    label: Chapter
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Compendium
+        name: compendium
+        widget: relation
+        collection: compendium
+        search_fields:
+          - title
+        value_field: "{{slug}}"
+        display_fields:
+          - title
+      - label: Chapter
+        name: chapter
+        widget: number
+      - label: Body
+        name: body
+        widget: markdown
+    create: true
+  - name: settings
+    label: Settings
+    files:
+      - name: nav
+        label: Navigation
+        file: _data/navigation.yml
         fields:
-        - { label: Title, name: name, widget: string }
-        - { label: URL, name: link, widget: string }
-      - name: Dropdown
-        label: Dropdown
-        widget: object
+          - label: Top Menu
+            name: top_menu
+            widget: list
+            types:
+              - name: Link
+                label: Link
+                widget: object
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: URL
+                    name: link
+                    widget: string
+              - name: Dropdown
+                label: Dropdown
+                widget: object
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Dowpdown Items
+                    name: items
+                    widget: list
+                    types:
+                      - name: Link
+                        label: Link
+                        widget: object
+                        fields:
+                          - label: Title
+                            name: name
+                            widget: string
+                          - label: URL
+                            name: link
+                            widget: string
+                      - name: Header
+                        label: Header
+                        widget: object
+                        fields:
+                          - label: Title
+                            name: name
+                            widget: string
+      - name: meta
+        label: Meta-Data
+        file: _data/meta.yml
         fields:
-        - { label: Title, name: name, widget: string }
-        - label: Dowpdown Items
-          name: items
-          widget: list
-          types:
-          - name: Link
-            label: Link
+          - name: traits
+            label: Traits
+            widget: list
+            fields:
+              - label: Title
+                name: name
+                widget: string
+              - label: Description
+                name: content
+                widget: markdown
+                required: false
+              - label: Subtraits
+                name: subtraits
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+          - name: actions
+            label: Actions
             widget: object
             fields:
-            - { label: Title, name: name, widget: string }
-            - { label: URL, name: link, widget: string }
-          - name: Header
-            label: Header
+              - name: type
+                label: Action Types
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Shorthand
+                    name: short
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+                    required: false
+              - name: standard_actions
+                label: Standard Actions
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Action Time needed
+                    name: action_time
+                    widget: string
+                  - label: Stamina Cost
+                    name: stamina
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+          - name: sizes
+            label: Size Types
+            widget: list
+            fields:
+              - label: Title
+                name: name
+                widget: string
+              - label: Description
+                name: content
+                widget: markdown
+                required: false
+          - name: condition
+            label: Condition Types
+            widget: list
+            fields:
+              - label: Title
+                name: name
+                widget: string
+              - label: Description
+                name: content
+                widget: markdown
+                required: false
+          - name: spells
+            label: Spells
             widget: object
             fields:
-            - { label: Title, name: name, widget: string }
-  - name: meta
-    label: Meta-Data
-    file: "_data/meta.yml"
-    fields:
-    - name: traits
-      label: Traits
-      widget: list
-      fields:
-      - { label: Title, name: name, widget: string }
-      - { label: Description, name: content, widget: markdown, required: false }
-      - label: Subtraits
-        name: subtraits
-        widget: list
+              - name: artistry
+                label: Spell Artistry
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+                    required: false
+              - name: category
+                label: Spell Category
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+                    required: false
+          - name: items
+            label: Items
+            widget: object
+            fields:
+              - name: category
+                label: Item Category
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+                  - label: Subcategory
+                    name: subtypes
+                    widget: list
+                    required: false
+                    fields:
+                      - label: Title
+                        name: name
+                        widget: string
+                      - label: Description
+                        name: content
+                        widget: markdown
+                        required: false
+          - name: crafting_components
+            label: Crafting Components
+            widget: object
+            fields:
+              - name: category
+                label: Crafting Category
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+                    required: false
+              - name: quality
+                label: Quality Types
+                widget: list
+                fields:
+                  - label: Title
+                    name: name
+                    widget: string
+                  - label: Description
+                    name: content
+                    widget: markdown
+                    required: false
+  - type: files
+    name: gerneral_settings
+    label: Settings
+    files:
+      - name: config
+        label: Configuration
+        file: admin/config.yml
         fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Description, name: content, widget: markdown }
-    - name: actions
-      label: Actions
-      widget: object
-      fields:
-      - name: type
-        label: Action Types
-        widget: list
-        fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Shorthand, name: short, widget: string }
-        - { label: Description, name: content, widget: markdown, required: false }
-      - name: standard_actions
-        label: Standard Actions
-        widget: list
-        fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Action Time needed, name: action_time, widget: string }
-        - { label: Stamina Cost, name: stamina, widget: string }
-        - { label: Description, name: content, widget: markdown }
-    - name: sizes
-      label: Size Types
-      widget: list
-      fields:
-      - { label: Title, name: name, widget: string }
-      - { label: Description, name: content, widget: markdown, required: false }
-    - name: condition
-      label: Condition Types
-      widget: list
-      fields:
-      - { label: Title, name: name, widget: string }
-      - { label: Description, name: content, widget: markdown, required: false }
-    - name: spells
-      label: Spells
-      widget: object
-      fields:
-      - name: artistry
-        label: Spell Artistry
-        widget: list
-        fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Description, name: content, widget: markdown, required: false }
-      - name: category
-        label: Spell Category
-        widget: list
-        fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Description, name: content, widget: markdown, required: false }
-    - name: items
-      label: Items
-      widget: object
-      fields:
-      - name: category
-        label: Item Category
-        widget: list
-        fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Description, name: content, widget: markdown }
-        - label: Subcategory
-          name: subtypes
-          widget: list
-          required: false
-          fields:
-          - { label: Title, name: name, widget: string }
-          - { label: Description, name: content, widget: markdown, required: false }
-    - name: crafting_components
-      label: Crafting Components
-      widget: object
-      fields:
-      - name: category
-        label: Crafting Category
-        widget: list
-        fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Description, name: content, widget: markdown, required: false }
-      - name: quality
-        label: Quality Types
-        widget: list
-        fields:
-        - { label: Title, name: name, widget: string }
-        - { label: Description, name: content, widget: markdown, required: false }
+          - widget: string
+            required: true
+            label: media_folder
+            name: Media Folder
+            default: assets/img
